@@ -1,0 +1,3936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+      Children Well and Happy | Project Gutenberg
+    </title>
+    <link rel="icon" href="images/cover.jpg" type="image/x-cover">
+    <style>
+body {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center; /* all headings centered */
+  clear: both;
+}
+h1 {
+  line-height: 1.5em;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+h1, h2, h3 {
+  line-height: 1.5em;
+}
+
+p {
+  text-indent: 1em;
+  margin-top: 0.51em;
+  text-align: justify;
+  margin-bottom: 0.49em;
+}
+
+.p2 {
+  margin-top: 2em;
+}
+.p6 {
+  margin-top: 6em;
+}
+.p6b {
+  margin-bottom: 6em;
+}
+
+.pad2 {
+  padding-left: 2em;
+}
+.pad4 {
+  padding-left: 4em;
+}
+
+.fs200 {
+  font-size: 200%;
+}
+.fs150 {
+  font-size: 150%;
+}
+.fs120 {
+  font-size: 120%;
+}
+.fs110 {
+  font-size: 110%;
+}
+.fs90 {
+  font-size: 90%;
+}
+.fs80 {
+  font-size: 80%;
+}
+.fs70 {
+  font-size: 70%;
+}
+.lsp {
+  letter-spacing: 0.3em;
+}
+.lsp2 {
+  letter-spacing: 0.25em;
+}
+.bold {
+  font-weight: bold;
+}
+.noindent {
+  text-indent: 0em;
+}
+
+.x-ebookmaker .customcover {
+  visibility: visible;
+  display: block;
+}
+
+.x-ebookmaker .corr {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+hr {
+  width: 33%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 33.5%;
+  margin-right: 33.5%;
+  clear: both;
+}
+
+hr.chap {
+  width: 65%;
+  margin-left: 17.5%;
+  margin-right: 17.5%;
+}
+@media print {
+  hr.chap {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+div.chapter {
+  page-break-before: always;
+}
+h2.nobreak {
+  page-break-before: avoid;
+}
+
+ul.index {
+  list-style-type: none;
+}
+li.ifrst {
+  margin-top: 1em;
+  text-indent: -2em;
+  padding-left: 1em;
+}
+li.indx {
+  margin-top: 0.5em;
+  text-indent: -2em;
+  padding-left: 1em;
+}
+li.isub1 {
+  text-indent: -2em;
+  padding-left: 2em;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+table.autotable {
+  border-collapse: collapse;
+}
+table.autotable td {
+  padding: 0.25em;
+}
+
+.tdl {
+  text-align: left;
+}
+.tdr {
+  text-align: right;
+}
+.tdc {
+  text-align: center;
+}
+.tdrb {
+  text-align: right;
+  vertical-align: bottom;
+}
+
+.pagenum {
+  /* uncomment the next line for invisible page numbers */
+  /*  visibility: hidden;  */
+  color: #A9A9A9;
+  position: absolute;
+  left: 92%;
+  font-size: small;
+  text-align: right;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-indent: 0;
+} /* page numbers */
+
+.blockquot {
+  margin-left: 5%;
+  margin-right: 10%;
+}
+
+.bb {
+  border-bottom: 2px solid;
+}
+
+.bl {
+  border-left: 2px solid;
+}
+
+.bt {
+  border-top: 2px solid;
+}
+
+.br {
+  border-right: 2px solid;
+}
+
+.bbox {
+  border: 2px solid;
+  margin: 2em 10% 2em 10%;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.smcap {
+  font-variant: small-caps;
+}
+
+.allsmcap {
+  font-variant: small-caps;
+  text-transform: lowercase;
+}
+
+.caption {
+  font-weight: normal;
+  font-size: 80%;
+}
+
+/* Images */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+img.w100 {
+  width: 100%;
+}
+
+.figcenter {
+  margin: auto;
+  text-align: left;
+  page-break-inside: avoid;
+  max-width: 100%;
+}
+.figcenter p {
+  text-align: center;
+}
+
+.figleft {
+  float: left;
+  clear: left;
+  margin-left: 0;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  margin-right: 1em;
+  padding: 0;
+  text-align: center;
+  page-break-inside: avoid;
+  max-width: 100%;
+}
+.figleft p {
+  text-align: center;
+}
+/* comment out next line and uncomment the following one for floating figleft on ebookmaker output */
+.x-ebookmaker .figleft {
+  float: left;
+  text-align: center;
+  margin-right: 0;
+}
+
+.figright {
+  float: right;
+  clear: right;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  margin-right: 0;
+  padding: 0;
+  text-align: center;
+  page-break-inside: avoid;
+  max-width: 100%;
+}
+/* comment out next line and uncomment the following one for floating figright on ebookmaker output */
+.x-ebookmaker .figright {
+  float: none;
+  text-align: center;
+  margin-left: 0;
+}
+/* .x-ebookmaker .figright {float: right;} */
+
+/* Footnotes */
+.footnote {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 0.9em;
+}
+
+.footnote .label {
+  position: absolute;
+  right: 84%;
+  text-align: right;
+}
+
+.fnanchor {
+  vertical-align: super;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+/* Transcriber's notes */
+.transnote {
+  background-color: #e6e6fa;
+  color: black;
+  font-size: small;
+  padding: 0.5em;
+  margin-bottom: 5em;
+  font-family: sans-serif, serif;
+}
+
+/* Illustration classes */
+.illowe6 {width: 6em;}
+.illowe18 {width: 18em;}
+.illowe20 {width: 20em;}
+.illowe36_75 {width: 36.75em;}
+.illowe37_875 {width: 37.875em;}
+.illowe40_1875 {width: 40.1875em;}
+.illowe43_25 {width: 43.25em;}
+.illowe43_5625 {width: 43.5625em;}
+.illowe44_6875 {width: 44.6875em;}
+.illowe45_5625 {width: 45.5625em;}
+.illowe50 {width: 50em;}
+.illowp50 {width: 50%;}
+.illowp70 {width: 70%;}
+
+.wd30 {
+  width: 30%;
+}
+.wd80 {
+  width: 80%;
+}
+.gothic {
+  font-family: Blackletter, Fraktur, Textur, Old English Text MT, "Olde English Mt", "Olde English", Diploma, England, Gothic, serif;
+}
+    </style>
+</head>
+<body>
+<div class="transnote">
+TRANSCRIBER’S NOTE
+
+<p>Some minor changes to the text are noted at the <a href="#transnote">end of the book</a>.
+</p>
+</div>
+<hr class="chap x-ebookmaker-drop">
+
+<figure class="figcenter illowp70" id="cover">
+<img alt="Original cover" class="w100" src="images/cover.jpg">
+</figure>
+
+<figure class="figcenter illowe50" id="frontis">
+  <img class="w100" src="images/frontis.jpg" alt="Frontispiece">
+  <figcaption class="caption"><p>MOTHERHOOD</p></figcaption>
+</figure>
+<hr class="chap x-ebookmaker-drop">
+
+
+<div class="chapter">
+<h1>
+CHILDREN<br>
+WELL AND HAPPY<br>
+</h1>
+<p class="noindent center fs120">
+A MANUAL FOR<br>
+THE GIRLS’ HEALTH LEAGUE
+</p>
+<br>
+<p class="noindent center">
+BY
+<br>
+MAY BLISS DICKINSON, R.N.
+</p>
+<br>
+<p class="noindent center fs90">
+PUBLISHED UNDER THE AUSPICES OF THE<br>
+MASSACHUSETTS STATE FEDERATION<br>
+OF WOMEN’S CLUBS
+</p>
+<br>
+<br>
+<br>
+<p class="center noindent">
+<span class="smcap">LeROY PHILLIPS</span><br>
+BOSTON
+</p>
+</div>
+<hr class="chap x-ebookmaker-drop">
+
+
+<div class="chapter">
+<p class="noindent center p6 p6b">
+<span class="smcap">Copyright, 1918</span><br>
+<span class="smcap">By</span> MAY BLISS DICKINSON<br>
+<br>
+ALL RIGHTS RESERVED<br>
+</p>
+</div>
+<hr class="chap x-ebookmaker-drop">
+
+
+<div class="chapter">
+<p class="noindent center">
+TO<br>
+MY MOTHER<br>
+MALAH BLISS DICKINSON<br>
+<br>
+“Earth’s noblest thing, a woman perfected”<br>
+</p>
+</div>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_vii">[Pg vii]</span></p>
+
+<h2 class="nobreak" id="CONTENTS">CONTENTS</h2>
+</div>
+
+<table class="autotable wd80">
+<tr class="fs70">
+<td class="tdr">CHAPTER</td>
+<td class="tdr" colspan="2">PAGE</td>
+</tr>
+<tr>
+<td class="tdr">I.</td>
+<td class="tdl"><span class="smcap">Personal Hygiene</span></td>
+<td class="tdr tdrb"><a href="#CHAPTER_I">1</a></td>
+</tr>
+<tr>
+<td class="tdr">II.</td>
+<td class="tdl"><span class="smcap">Home Sanitation</span></td>
+<td class="tdr tdrb"><a href="#CHAPTER_II">16</a></td>
+</tr>
+<tr>
+<td class="tdr">III.</td>
+<td class="tdl"><span class="smcap">The Newborn Baby</span></td>
+<td class="tdr tdrb"><a href="#CHAPTER_III">29</a></td>
+</tr>
+<tr>
+<td class="tdr">IV.</td>
+<td class="tdl"><span class="smcap">Breast Feeding</span></td>
+<td class="tdr tdrb"><a href="#CHAPTER_IV">38</a></td>
+</tr>
+<tr>
+<td class="tdr">V.</td>
+<td class="tdl"><span class="smcap">Bottle Feeding</span></td>
+<td class="tdr tdrb"><a href="#CHAPTER_V">46</a></td>
+</tr>
+<tr>
+<td class="tdr">VI.</td>
+<td class="tdl"><span class="smcap">Care of the Baby’s Food</span></td>
+<td class="tdr tdrb"><a href="#CHAPTER_VI">55</a></td>
+</tr>
+<tr>
+<td class="tdr">VII.</td>
+<td class="tdl"><span class="smcap">Care of the Baby’s Body</span></td>
+<td class="tdr tdrb"><a href="#CHAPTER_VII">63</a></td>
+</tr>
+<tr>
+<td class="tdr">VIII.</td>
+<td class="tdl"><span class="smcap">The Baby’s Clothing</span></td>
+<td class="tdr tdrb"><a href="#CHAPTER_VIII">71</a></td>
+</tr>
+<tr>
+<td class="tdr">IX.</td>
+<td class="tdl"><span class="smcap">Habits and Training</span></td>
+<td class="tdr tdrb"><a href="#CHAPTER_IX">78</a></td>
+</tr>
+<tr>
+<td class="tdr">X.</td>
+<td class="tdl"><span class="smcap">The Baby’s Teeth</span></td>
+<td class="tdr tdrb"><a href="#CHAPTER_X">88</a></td>
+</tr>
+<tr>
+<td class="tdr">XI.</td>
+<td class="tdl"><span class="smcap">Emergencies</span></td>
+<td class="tdr tdrb"><a href="#CHAPTER_XI">93</a></td>
+</tr>
+<tr>
+  <td colspan="3"></td>
+</tr>
+<tr>
+<td class="tdl" colspan="2"><span class="smcap">Appendix A. Organization of the
+Girls’ Health League Classes</span></td>
+<td class="tdr tdrb"><a href="#APPENDIX_A">103</a></td>
+</tr>
+<tr>
+<td class="tdl" colspan="2"><span class="smcap">Appendix B. Recipes</span></td>
+<td class="tdr tdrb"><a href="#APPENDIX_B">110</a></td>
+</tr>
+<tr>
+<td class="tdl" colspan="2"><span class="smcap">Index</span></td>
+<td class="tdr tdrb"><a href="#INDEX">113</a></td>
+</tr>
+</table>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_viii">[viii]</span></p>
+
+<h2 class="nobreak" id="ILLUSTRATIONS">ILLUSTRATIONS</h2>
+</div>
+
+
+<table class="autotable wd80">
+<tr class="fs70">
+<td class="tdr" colspan="2">PAGE</td>
+</tr>
+<tr>
+<td class="tdl">Motherhood</td>
+<td class="tdr"><a href="#frontis">Frontispiece</a></td>
+</tr>
+<tr>
+<td class="tdl">Correct Posture when Standing</td>
+<td class="tdr tdrb"><a href="#image002">2</a></td>
+</tr>
+<tr>
+<td class="tdl">Wrong Way to carry Schoolbooks</td>
+<td class="tdr tdrb"><a href="#image005">5</a></td>
+</tr>
+<tr>
+<td class="tdl">Right Way to carry Schoolbooks</td>
+<td class="tdr tdrb"><a href="#image005">5</a></td>
+</tr>
+<tr>
+<td class="tdl">Section of the Skin</td>
+<td class="tdr tdrb"><a href="#image007">7</a></td>
+</tr>
+<tr>
+<td class="tdl">The Correct Kind of Toothbrush</td>
+<td class="tdr tdrb"><a href="#image009">9</a></td>
+</tr>
+<tr>
+<td class="tdl">Ideal Ventilation</td>
+<td class="tdr tdrb"><a href="#image020">20</a></td>
+</tr>
+<tr>
+<td class="tdl">The Baby’s Bed</td>
+<td class="tdr tdrb"><a href="#image034">34</a></td>
+</tr>
+<tr>
+<td class="tdl">Model Birth Certificate</td>
+<td class="tdr tdrb"><a href="#MODEL_BIRTH_CERTIFICATE">36</a></td>
+</tr>
+<tr>
+<td class="tdl">Weighing the Baby</td>
+<td class="tdr tdrb"><a href="#image044">44</a></td>
+</tr>
+<tr>
+<td class="tdl">Modification of the Milk</td>
+<td class="tdr tdrb"><a href="#image049">49</a></td>
+</tr>
+<tr>
+<td class="tdl">Pasteurizing the Baby’s Milk</td>
+<td class="tdr tdrb"><a href="#image053">53</a></td>
+</tr>
+<tr>
+<td class="tdl">Homemade Refrigerator</td>
+<td class="tdr tdrb"><a href="#image056">56</a></td>
+</tr>
+<tr>
+<td class="tdl">Filling the Baby’s Bottles</td>
+<td class="tdr tdrb"><a href="#image057">57</a></td>
+</tr>
+<tr>
+<td class="tdl">Testing the Temperature of the Milk</td>
+<td class="tdr tdrb"><a href="#image060">60</a></td>
+</tr>
+<tr>
+<td class="tdl">Correct Way to Hold the Baby while Feeding</td>
+<td class="tdr tdrb"><a href="#image061">61</a></td>
+</tr>
+<tr>
+<td class="tdl">Bathing the Baby</td>
+<td class="tdr tdrb"><a href="#image064">64</a></td>
+</tr>
+<tr>
+<td class="tdl">Baby Clothes</td>
+<td class="tdr tdrb"><a href="#image072">72</a></td>
+</tr>
+<tr>
+<td class="tdl">Nose and Throat Passages—Normal and abnormal</td>
+<td class="tdr tdrb"><a href="#image080">80</a></td>
+</tr>
+<tr>
+<td class="tdl">Baby Exercising</td>
+<td class="tdr tdrb"><a href="#image086">86</a></td>
+</tr>
+<tr>
+<td class="tdl">Child brushing his Teeth</td>
+<td class="tdr tdrb"><a href="#image090">90</a></td>
+</tr>
+<tr>
+<td class="tdl">Bath Thermometer</td>
+<td class="tdr tdrb"><a href="#image095">95</a></td>
+</tr>
+<tr>
+<td class="tdl">Protecting the Baby from his Mother’s Cold</td>
+<td class="tdr tdrb"><a href="#image099">99</a></td>
+</tr>
+</table>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_ix">[ix]</span></p>
+
+<h2 class="nobreak" id="INTRODUCTION">INTRODUCTION</h2>
+</div>
+
+
+<p>The purpose of this book is to give
+schoolgirls definite help in learning how
+to keep themselves and other children
+well and happy.</p>
+
+<p>The problem is a double one: How
+can we best safeguard the health of our
+schoolgirls? and What can we do through
+them to save the babies? To the first
+question the answer is that we can teach
+the girls the sacredness of life by instructing
+them in personal hygiene and
+in the care of the home. The object of
+such instruction is to give each girl a
+“sound mind in a sound body” and to
+fit her for a woman’s work in the world.
+The solution of the second part of the
+problem is to be found in the careful
+training of the schoolgirl in the general
+principles of hygiene as applied to babies.</p>
+
+<p><span class="pagenum" id="Page_x">[x]</span></p>
+
+<p>Because the Health League classes
+reach the girls during their formative
+years, they offer a splendid opportunity
+to establish those habits of life that make
+for health and consequent happiness and
+usefulness. Now as never before we are
+coming to realize that the strength of a
+nation depends primarily on the spiritual
+and physical health of its citizens and
+also on the training of its children to
+assume in later years their duties as
+fathers and mothers.</p>
+
+<p>The author wishes to express her appreciation
+and gratitude to the many persons
+who have manifested interest in the
+work of the Girls’ Health League, which
+was launched under the auspices of the
+Massachusetts State Federation of Women’s
+Clubs. She wishes also especially
+to thank the following: Mrs. Herbert J.
+Gurney, President of the Massachusetts
+State Federation of Women’s Clubs, for<span class="pagenum" id="Page_xi">[xi]</span>
+her encouragement; Dr. Payson Smith,
+Commissioner of Education of Massachusetts,
+for his indorsement; John B.
+Hawes, 2d, M. D., for his criticism and
+advice; Margaret V. Grogan, M. D., for
+her medical assistance; Miss Florence
+Hilton, Director of Physical Education,
+Framingham public schools, for illustrations
+of posture; G. W. Cokell of Framingham
+for photographic work of unusual
+value; the Tri-Ad Studio artists for their
+excellent designs.</p>
+
+<p class="right">
+MAY BLISS DICKINSON, R. N.<br>
+</p>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_xii">[xii]</span></p>
+
+<h2 class="nobreak" id="FOREWORD">FOREWORD</h2>
+</div>
+
+
+<p>May this little book go forth bearing
+words of healing, health, and joy to you
+who faithfully study them, and, also, to
+those little ones whom the kind Father
+may place in your arms in the wonderful
+years to come.</p>
+
+<p class="right">
+MRS. SAMUEL W. McCALL<br>
+</p>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_1">[Pg 1]</span></p>
+
+<p class="nobreak fs150 center bold" id="CHILDREN">CHILDREN
+WELL AND HAPPY</p>
+</div>
+
+<h2 class="nobreak" id="CHAPTER_I">CHAPTER I<br>
+<br>
+<span class="bold fs80">PERSONAL HYGIENE</span></h2>
+
+
+<div class="blockquot">
+
+<p><b>Suggestions for demonstrations. 1.</b> Demonstrate
+the correct posture when standing, walking,
+and sitting. <b>2.</b> Show the right and wrong kinds
+of shoes. <b>3.</b> Demonstrate the correct way of carrying
+schoolbooks. <b>4.</b> Show samples of soap—pure
+castile, Ivory, and a cheap scented variety—and
+explain the right and wrong uses of soap.</p>
+</div>
+
+<p>Personal hygiene may be defined as
+the wise and systematic care of the body.
+The reasons why every girl should take
+care of her body are:</p>
+
+<p>First, good health means power to do
+one’s work in life well.</p>
+
+<p>Second, health is an aid to happiness
+and personal attractiveness.</p>
+
+<p><span class="pagenum" id="Page_2">[2]</span></p>
+
+<figure class="figleft illowe18" id="image002">
+  <img class="w100" src="images/image002.jpg" alt="Girl standing">
+  <figcaption class="caption center"><p>CORRECT POSTURE WHEN
+STANDING</p></figcaption>
+</figure>
+
+<p>Good health helps
+to give a person an
+active, cheerful mind,
+and this makes one
+alert, capable, and
+able to work to the
+best advantage. Good
+health gives poise
+and grace to the body
+and helps to create
+efficiency.</p>
+
+<p>The following are
+good rules:</p>
+
+<ol class="pad4">
+<li>Form health-giving
+habits.</li>
+<li>Let keeping well
+and happy be one of
+your most important
+duties.</li>
+</ol>
+
+<p>The person who
+honestly wishes to be useful must begin
+at once to make good health a certainty.</p>
+
+<p><span class="pagenum" id="Page_3">[3]</span></p>
+
+
+<p class="noindent center"><span class="smcap">Rules for Correct Posture</span></p>
+
+<p><b>Standing.</b> We should stand correctly in
+order that the organs of the body—heart,
+lungs, stomach, liver, and kidneys—may
+have room and be in position to do their
+work well. We should stand erect, chin
+in, chest high, abdomen flat, and with the
+weight of the body resting on the balls
+of the feet.</p>
+
+<p><b>Walking.</b> In walking the weight of the
+body should be thrown well forward.</p>
+
+<p>It is correct to let the heel touch the
+ground first, but the weight should very
+quickly be transferred to the ball of the
+foot. The correct position of the feet is
+with the toes pointed straight forward.
+This straight-foot position is characteristic
+of our best athletes, our native Indians, and
+others who are noted for great endurance
+in running and walking. Two things are
+essential: stockings should be a little<span class="pagenum" id="Page_4">[4]</span>
+longer than the feet, and shoes should
+be roomy at the toes and have heels not
+more than one inch high.</p>
+
+<p><b>Sitting.</b> As our schoolgirls sit many
+hours each day, it is vital to their health
+that they sit correctly. When sitting, one
+should push back in the chair as far as
+possible. In the resting position the
+entire trunk should lean backwards
+against the back of the chair; the hips
+should not be allowed to slide forward
+in the seat. In the active position the
+trunk is held erect or inclined forward.
+When leaning forward in a sitting position,
+the trunk must be held erect or
+inclined forward, and the bending should
+be from the hips, not from the waistline.
+Girls should not sit on one foot nor with
+the knees crossed, as these positions interfere
+with the circulation. When a person
+is sitting, the feet may be crossed if a
+change of position is desired.</p>
+
+<p><span class="pagenum" id="Page_5">[5]</span></p>
+
+<figure class="figcenter illowe50" id="image005">
+  <img class="w100" src="images/image005.jpg" alt="A girl holding incorrectly
+holding books contrasting with a girl holding books correctly">
+  <figcaption class="caption">
+<table class="autotable" style="width: 100%">
+<tr>
+<td>WRONG WAY TO CARRY SCHOOLBOOKS
+</td>
+<td>RIGHT WAY TO CARRY SCHOOLBOOKS</td>
+</tr>
+</table></figcaption>
+</figure>
+
+<p><b>Carrying of schoolbooks.</b> In going to
+and from school, books should be carried
+on the right arm one day, on the left arm
+the next day, or they may be divided and
+carried partly on each arm. Of course<span class="pagenum" id="Page_6">[6]</span>
+the best plan is not to carry many books
+home. All pupils should prepare as many
+lessons during the study periods of each
+school day as classes will permit.</p>
+
+<p><b>Position when reading.</b> Children should
+be taught at an early age not to let the
+light, either natural or artificial, shine in
+their eyes. The strongest light should
+come from the left. Light from above is
+the best. One should not read too long
+at any one time without looking up at
+some distant object in order to rest the
+muscles of the eyes.</p>
+
+
+<p class="center"><span class="smcap">Care of the Skin</span></p>
+
+<p>The skin is the outer covering of the
+body. It serves as a protection to the
+body and as an organ of excretion. Many
+waste products which would act as poisons
+if retained in the body are carried away
+through the pores of the skin by means of
+perspiration. This perspiration is produced<span class="pagenum" id="Page_7">[7]</span>
+by sweat-producing glands. Closely related
+to these are the oil-producing glands. The
+constant presence of perspiration and oily
+material from the glands makes it important
+that the skin be kept clean so that
+the pores may not become clogged.</p>
+
+<figure class="figcenter illowe43_25" id="image007">
+  <img class="w100" src="images/image007.jpg" alt="A diagram of the layers of the skin including
+hair and a sweat gland">
+  <figcaption class="caption">
+
+hair<br>
+epidermis<br>
+sweat gland<br>
+dermis<br>
+
+<p>SECTION OF THE SKIN</p></figcaption>
+</figure>
+
+<p><b>Handkerchiefs.</b> It is important that the
+child be supplied with clean handkerchiefs<span class="pagenum" id="Page_8">[8]</span>
+and be taught the proper use of them.
+A child should be told never to use a
+handkerchief belonging to anyone else.
+A handkerchief should be held before the
+nose or mouth when coughing or sneezing.
+One should never spit on the sidewalk,
+in the house, or in any public place.</p>
+
+
+<p class="center"><span class="smcap">Baths</span></p>
+
+<p><b>Cleansing bath.</b> The most important
+bath is the cleansing bath of warm water
+and soap, which should be taken at night
+or after exercise. After taking this bath
+one should dash or rub cold water over
+the skin. The body should be quickly
+dried and given a brisk rubbing with a
+coarse towel to increase the circulation.</p>
+
+<p><b>Cold bath.</b> A cool sponge bath, taken
+the first thing in the morning, has a stimulating
+effect on the body. It sends the
+blood to the skin and quickens the circulation.
+This bath should be followed<span class="pagenum" id="Page_9">[9]</span>
+by a brisk rubdown with a rough towel.
+A cold plunge bath should not be taken
+without the advice of a physician, as cold
+baths are not beneficial to everyone.</p>
+
+<figure class="figcenter illowe50" id="image009">
+  <img class="w100" src="images/image009.jpg" alt="A toothbrush">
+  <figcaption class="caption"><p>THE CORRECT KIND OF TOOTHBRUSH</p></figcaption>
+</figure>
+
+<p><b>Brushing the teeth.</b> The greatest factor
+in preventing decay of the teeth is cleanliness.
+The teeth should be brushed the
+first thing in the morning and the last
+thing at night, and, when convenient,
+should be rinsed after eating. The lower
+teeth should be brushed with a half-rotary
+motion up, and the upper teeth should be
+brushed down. This will assist in removing
+particles of food from the teeth and
+will prevent injury to the gums. Dental
+floss should be used between the teeth.
+Coarse food which requires much chewing<span class="pagenum" id="Page_10">[10]</span>
+strengthens the teeth and is excellent for
+the digestion.</p>
+
+<p>It is well to use a simple mouth wash
+of one-half teaspoonful of soda or salt in
+a glass of tepid water. Have the dentist
+clean the teeth twice a year; do not wait
+until the teeth ache before going to the
+dentist.</p>
+
+
+<p class="center"><span class="smcap">Food</span></p>
+
+<p>Food is that which supplies nourishment
+to our bodies. Although many elements
+enter into the composition of what
+we eat, food is roughly divided into three
+classes: proteids, carbohydrates, and fats.
+Some foods contain all of these elements;
+others contain only one or two of them.</p>
+
+<p><b>Proteids.</b> The proteids build and repair
+the tissues of the body and include such
+substances as the lean of meat and fish,
+the white of egg, milk, and parts of vegetables.
+Dried peas, dried beans, and nuts
+contain large percentages of proteid.</p>
+
+<p><span class="pagenum" id="Page_11">[11]</span></p>
+
+<p><b>Carbohydrates (sugars and starches).</b> Carbohydrates
+form the essential parts of
+vegetables and furnish body heat and
+muscular power. Foods containing a large
+percentage of starch are bread, potatoes,
+rice, macaroni, tapioca, and cereals. Such
+foods as candy, maple sirup, honey, and
+molasses are almost entirely sugar; while
+carrots, parsnips, and beets contain a large
+percentage of sugar.</p>
+
+<p><b>Fats.</b> Fats are the energy-producing
+part of our diet. They may be of either
+vegetable or animal origin—as cream,
+butter, yolks of eggs, nuts, meat, and
+fish fats.</p>
+
+<p><b>Mixed diet.</b> A mixed diet consisting of
+all the food elements in proper proportion
+is necessary to supply material for the
+normal growth of the body. Everyone
+should eat vegetables freely not only because
+they are good for the bowels (acting
+as a wholesome laxative) but also because<span class="pagenum" id="Page_12">[12]</span>
+many of them, especially the green vegetables,
+contain important organic matter,
+such as iron.</p>
+
+<p><b>Bread and butter.</b> Bread has often been
+called the staff of life. In other words,
+bread and butter alone form an almost
+perfectly balanced meal. Bread should
+never be eaten until it is at least twenty-four
+hours old. Stale bread cut thin and
+toasted in the oven until it is crisp is
+appetizing and wholesome. Instead of giving
+large amounts of bread and butter to
+children three times a day, mothers should
+substitute in part vegetables and fruits.</p>
+
+<p><b>Coarse foods.</b> Coarse foods are especially
+valuable because they require thorough
+mastication, which is the real function
+of the teeth. This helps to keep the
+tongue and teeth clean. Another reason
+for giving coarse foods to children is that
+the circulation of blood in the gums and
+throat is improved by chewing.</p>
+
+<p><span class="pagenum" id="Page_13">[13]</span></p>
+
+<p><b>Milk.</b> Milk contains all the essential
+elements of a well-balanced diet and is
+one of the most important foods. It
+should be taken slowly and with other
+food, such as graham crackers, and should
+constitute an important part of the diet
+of every child. Children up to fourteen
+years of age should take milk, or milk
+flavored with cocoa, in the place of tea
+and coffee.</p>
+
+<p><b>Water.</b> While water is not classed as a
+food, it makes up three fifths of the total
+of the fluids of the body and aids in the
+elimination of the waste products of the
+body. All foods contain some water, while
+fruits and vegetables are largely composed
+of it. A glass of water should be taken
+before breakfast, in the middle of the
+morning, and in the afternoon, and two
+glasses in the evening. One glass may be
+taken with the meals if it is taken after
+the food in the mouth has been swallowed.<span class="pagenum" id="Page_14">[14]</span>
+Six or eight glasses of water should be
+taken during every twenty-four hours.</p>
+
+<p><b>Candy.</b> Many people believe that candy
+is harmful. This is because children, and
+indeed adults, are apt to eat it at the
+wrong time and to eat too much of it at
+one time; nevertheless it has high food
+value, and a little pure candy eaten once
+a day, after a meal, is healthful.</p>
+
+<p><b>Bowels.</b> When there is any trouble with
+the stomach or bowels look for the cause
+in some mistake or indiscretion in the
+diet. The family physician should be
+consulted.</p>
+
+<p><b>Care of the bowels.</b> The bowels should
+move at least once every day. A regular
+habit of bowel movement can and should
+be formed. The best time is in the morning,
+after breakfast. Many of the head-aches,
+muddy, pimply complexions, and
+bad tempers are due to constipation. This
+condition may be relieved by exercise, by<span class="pagenum" id="Page_15">[15]</span>
+the eating of coarse food, vegetables, fruits,
+such as apples, prunes, and oranges, and
+by drinking plenty of water.</p>
+
+<p><b>Exercise.</b> Exercise, as either work or
+play, is necessary because it stimulates
+the action of all the organs of the body.
+The blood circulates more freely during
+exercise, and more waste products are
+thrown off. One should not take violent
+exercise immediately after eating; neither
+should one exercise when unduly fatigued.
+Work must be wisely alternated with play
+and rest, because efficiency ends when a
+person becomes overtired.</p>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_16">[16]</span></p>
+
+<h2 class="nobreak" id="CHAPTER_II">CHAPTER II<br>
+<br>
+<span class="bold fs80">HOME SANITATION</span></h2>
+</div>
+
+<div class="blockquot">
+
+<p><b>Suggestions for demonstrations.</b> <b>1.</b> Demonstrate
+the ventilation of a room. <b>2.</b> Demonstrate
+the dusting of a room.</p>
+</div>
+
+
+<p>By home sanitation we mean keeping
+the house clean and giving the forces
+of nature, such as sunshine, fresh air, and
+pure water, their fullest opportunity to
+work for us. By letting the out of doors
+indoors we give nature a fairer chance
+at her great task of keeping us well and
+happy.</p>
+
+<p>The house is a protection for the family
+and should have healthful and cheerful
+surroundings. The housewife should understand
+the principles of home sanitation
+and thereby secure for her family a
+healthy and happy life.</p>
+
+<p><span class="pagenum" id="Page_17">[17]</span></p>
+
+<p><b>Location of the house.</b> The location of
+the house is often decided more by necessity
+or convenience than by the consideration
+of health. If possible, a tenement or
+house should be so situated as to secure
+good air, sunshine, good drainage, and
+good neighbors. A house with a southerly
+exposure or placed with its corners to the
+points of the compass has a distinct hygienic
+value and is always to be preferred,
+because it gets the sun in each room at
+some time during the day.</p>
+
+<p><b>Sunshine.</b> Abundant sunshine and light
+in the home are of great importance, and
+help to make the home healthful and more
+cheerful. People living in rooms which
+have no sun become pale and gradually
+lose strength.</p>
+
+<p><b>Pure air.</b> Sunshine and pure air are the
+most important essentials for healthy life
+in the home. Nothing will take the place
+of fresh air. Everyone should be taught<span class="pagenum" id="Page_18">[18]</span>
+to fill the lungs with it by slow, deep
+breathing. We breathe on an average
+eighteen times a minute, or 25,920 times
+every twenty-four hours. No matter how
+well rooms are ventilated, it is a good plan
+to open the windows wide a few times each
+day. This helps to rid the atmosphere of
+impurities.</p>
+
+<p><b>Oxygen.</b> Oxygen is the element in the
+air that sustains life; it is inhaled through
+the lungs, taken up by the blood, and carried
+to all parts of the body.</p>
+
+<p><b>Carbon dioxide.</b> The air also contains
+carbon dioxide, which is a product of combustion
+in many forms, such as respiration
+and the decomposition of animal and vegetable
+matter. Although enormous quantities
+of carbon dioxide are constantly being
+forced into the air, it is likewise being
+removed constantly—especially by growing
+vegetation. Plants and trees, under
+the influence of sunlight, absorb much of<span class="pagenum" id="Page_19">[19]</span>
+the carbon dioxide; therefore plants, which
+many people like to have in their rooms,
+not only please the eye but have a practical
+value.</p>
+
+<p>The condition of plants in the house is
+a good test of home sanitation. If the
+leaves drop off, probably the rooms are
+overheated and the air too dry. There is
+some truth in the saying, “Where plants
+will not grow, people ought not to live.”
+The breathing of impure air causes a
+feeling of discomfort; the habitual breathing
+of bad air causes headache and lessens
+the resistance of the body to disease.</p>
+
+<p><b>Impurities of air in homes.</b> Many conditions
+may help cause bad air in our homes;
+among these are mentioned overcrowding,
+oil stoves, gas stoves, and the kind of
+housekeeping which permits the accumulation
+of dust and waste.</p>
+
+<p><b>Good ventilation.</b> By good ventilation
+we mean a sufficient supply of fresh air of<span class="pagenum" id="Page_20">[20]</span>
+suitable temperature and moisture, kept
+systematically in motion. Moving air
+serves a double purpose—that of bringing
+to us a fresh supply and of taking away
+the warm, moist, impure air by which we<span class="pagenum" id="Page_21">[21]</span>
+are surrounded. The best and simplest
+way to ventilate a room is to have one or
+two windows open at both the top and the
+bottom. During storms or in the winter
+time, ventilation may be secured by covering
+a wire screen with thin outing flannel.
+This allows the entrance of fresh air
+without drafts.</p>
+
+<figure class="figcenter illowe50" id="image020">
+  <img class="w100" src="images/image020.jpg" alt="A plant by an ajar
+window with open curtains">
+  <figcaption class="caption"><p>IDEAL VENTILATION</p></figcaption>
+</figure>
+
+<p><b>Drafts.</b> There is a superstition that
+colds are caused by drafts. As a matter
+of fact, moving air is a necessity, and
+drafts do not cause colds. Drafts, sudden
+chilling of the body, and dampness may
+be predisposing causes, but in themselves
+they will not produce a cold. Such conditions
+lower the general vitality of the
+body and favor the development of infection
+when the specific cause is introduced.</p>
+
+<p><b>Temperature of air.</b> The temperature of
+the air has a very important bearing on
+health. The harmful effect of extremes
+of temperature has caused the death of<span class="pagenum" id="Page_22">[22]</span>
+many babies. The temperature of heated
+rooms, during the day, should be between
+68° and 70°F.</p>
+
+<p><b>Humidity.</b> By humidity we mean the
+moisture in the air. Many of the colds
+which occur in the winter are due to the
+dry air in homes and places of work.
+Extreme dryness irritates the mucous
+membranes of the nose and throat, and
+this irritation is favorable to the development
+of infection. Moisture may be
+added to the air in two simple ways: by
+keeping a dish of water on the radiator
+and by keeping plants in the rooms, for
+plants constantly throw off moisture.</p>
+
+<p><b>Water.</b> The purity of the water that is
+used in the household, whether it comes
+from a public water supply or from a well
+in the country, is a question of great importance.
+Every housewife should know
+the source from which the water used in
+her household comes.</p>
+
+<p><span class="pagenum" id="Page_23">[23]</span></p>
+
+<p>Water is considered pure from the standpoint
+of health when it is free from pollution,
+color, odor, poisonous salts, and
+turbidity. Clear, sparkling water is not
+necessarily pure however. The purity of
+water can be determined only by analysis.</p>
+
+<p>In most states the public water supply
+of cities and towns is inspected regularly
+and the water is examined, so that the
+people may be protected from danger of
+infection. When the water used in a
+household is obtained from a well or private
+water supply, an analysis of it should
+be made.</p>
+
+<p>All wells should be carefully constructed
+and covered, so that there may
+be no danger of pollution from surface
+drainage. Privy vaults should not be near
+the well or so located that there will be
+drainage from them to a well; otherwise
+the germs of typhoid and other diseases
+may find their way to it through the<span class="pagenum" id="Page_24">[24]</span>
+ground and become a source of danger
+to the persons using the water. As an
+extra precaution all discharges from
+persons who have tuberculosis, cholera,
+dysentery, or typhoid fever should be
+effectively disinfected before they are
+emptied into a privy vault or into a
+flush closet.</p>
+
+<p><b>Purification of water.</b> If the purity of
+the water is doubted, it should be boiled
+for five or ten minutes in a clean, covered
+kettle. This renders it safe. The flat
+taste which often results from the boiling
+may be remedied by shaking the water
+in a bottle or pouring it from one clean
+pitcher to another or by simply exposing
+it to the air overnight. Water should
+be kept cool, and should be protected
+from dust.</p>
+
+<p><b>Household filters.</b> The domestic filter
+is of little value. It will remove visible
+particles of matter, but will have very<span class="pagenum" id="Page_25">[25]</span>
+little effect upon bacteria. If such filters
+are used, they should be carefully and intelligently
+cleaned several times a day.</p>
+
+<p><b>Care and arrangement of rooms.</b> All the
+rooms in the house should be well ventilated
+and kept scrupulously clean. The
+windows should be entirely screened in
+order that they may be opened at both
+top and bottom. The screens should be
+put on in the spring before the flies and
+mosquitoes appear and should not be removed
+until all danger from them is past.
+Screens should be brushed frequently.</p>
+
+<p><b>Dust and dusting.</b> Dust is brought into
+the home on shoes and clothing, and is
+blown in from the outside. Dust must
+be kept under control by the use of a
+vacuum cleaner, a carpet sweeper, or a
+damp broom, and by good ventilation.
+Children should not be allowed to remain
+in rooms that are being swept, for dust
+causes an irritation of the eyes, nose, and<span class="pagenum" id="Page_26">[26]</span>
+throat and also is frequently a carrier of
+disease germs. The dusting of furniture
+should be done with a damp cloth. This
+will wipe off the dust and not stir it up
+into the air where it will be inhaled or
+will settle again. A feather duster should
+not be used. Dampened dusters may be
+prepared in the following way: spread
+the dusters out smoothly on a towel that
+has been wrung out of hot water, roll, and
+let them lie for half an hour before using.</p>
+
+<p><b>The cellar.</b> The cellar should extend
+under the entire house. If there is no
+cellar, the space under the floor should
+be well ventilated. There should be windows
+on at least two sides of the cellar to
+give ventilation and light, and the windows
+should be well screened. The cellar
+requires constant care and should be kept
+not only dry but clean and free from rubbish
+and substances that decay or absorb
+and hold moisture.</p>
+
+<p><span class="pagenum" id="Page_27">[27]</span></p>
+
+<p><b>Care of food.</b> Young people should
+learn to care for food in the home. Food
+should be fresh, clean, and wholesome.
+It should be protected from dust and
+handled only with clean hands. The development
+of bacteria may be prevented
+by keeping the food cold and clean.
+Fruits should be washed before being
+used. The outer covering of berries is
+easily bruised, and such fruits are frequently
+contaminated by dust and flies.
+Fruit should be full-grown but not over-ripe
+when eaten. Vegetables such as
+lettuce, celery, and radishes, that are
+eaten uncooked, should be thoroughly
+washed and rinsed in several waters.</p>
+
+<p><b>Care of garbage.</b> Garbage consists chiefly
+of the refuse matter from the kitchen. It
+should be kept in a clean metal can with
+a tight-fitting cover, since it will attract
+flies, rats, and other vermin. It is important
+that the can be frequently emptied<span class="pagenum" id="Page_28">[28]</span>
+and cleaned. Be careful that broken glass,
+broken dishes, nails, tacks, or old papers are
+not mixed with the kitchen refuse. Have
+a separate can or barrel for ashes and all
+glass and metal rubbish. The fair criterion
+of good housekeeping is the amount of
+garbage. A large amount of garbage means
+carelessness and waste in the kitchen.</p>
+
+<p><b>Dishcloth and dish towels.</b> Beware of
+a greasy, damp, disease-carrying dishcloth
+that is hung in a warm, dark place. The
+dishcloth and dish towels should be kept
+clean by washing them with soap and hot
+water every day. They should be hung
+out in the sunshine in the open air.</p>
+
+<p><b>Clean hands.</b> Clean hands mean more
+than personal cleanliness. They mean
+clean door knobs, furniture, and clothing.
+The hands should be washed frequently
+with warm water and soap, and always
+before handling food, after going to the
+toilet, and before taking the baby.</p>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_29">[29]</span></p>
+
+<h2 class="nobreak" id="CHAPTER_III">CHAPTER III<br>
+<br>
+<span class="bold fs80">THE NEWBORN BABY</span></h2>
+</div>
+
+<div class="blockquot">
+
+<p><b>Suggestions for demonstrations.</b> <b>1.</b> Demonstrate
+the washing of the baby’s eyes. <b>2.</b> Demonstrate
+giving the baby the oil bath. <b>3.</b> Demonstrate
+giving the sponge bath. <b>4.</b> Show how to make
+the baby’s bed and how to place the baby in it.</p>
+</div>
+
+
+<p><b>First care of baby.</b> The hands should
+be carefully washed before handling the
+baby. When the baby comes his eyes
+must be washed with a two per cent solution
+of boric acid.<a id="FNanchor_1" href="#Footnote_1" class="fnanchor">[1]</a> The proper care of the
+eyes at this time may be the means of
+preserving the eyesight. A fresh piece
+of cotton should be used for each eye.
+Always wash the lids from the nose toward
+the outer corner of the eye; then
+burn the cotton. The baby should then<span class="pagenum" id="Page_30">[30]</span>
+be placed upon his right side, with his
+head a little lower than his body.</p>
+
+<div class="footnote">
+<p><a id="Footnote_1" href="#FNanchor_1" class="label">[1]</a> See <a href="#APPENDIX_B">Appendix B</a>, p. 109.</p>
+</div>
+
+<p><b>Oil bath.</b> When the baby is born there
+is on his skin, particularly in the creases,
+a white cheeselike substance that can be
+removed only with oil. Therefore the
+baby’s first bath should be of warm olive
+oil or vaseline, applied with a piece of soft
+cotton and allowed to remain for an hour
+or more and then very gently wiped off.
+A water bath should not be given until
+the second day.</p>
+
+<p><b>A sponge bath.</b> A sponge bath should
+be given daily up to the sixth or ninth
+day, after which the warm tub bath should
+be substituted. Essentials for the bath are:</p>
+
+<ol class="pad4">
+<li>A warm room (72° F.)</li>
+<li>A bath thermometer</li>
+<li>A large flannel bath apron</li>
+<li>Two basins of warm water</li>
+<li>Two soft washcloths</li>
+<li>Two large soft towels<span class="pagenum" id="Page_31">[31]</span></li>
+<li>Olive-oil soap or pure castile soap</li>
+<li>Pure talcum powder</li>
+<li>Two per cent boric-acid solution</li>
+<li>Absorbent cotton</li>
+</ol>
+
+<p>The toilet articles should be kept on a
+white enamel tray, which is easy to clean.
+After everything is prepared for the bath
+the fresh clothing should be warmed. The
+mother puts on her apron and takes the
+baby in her lap; she then undresses him
+and wraps him in the bath apron. The
+temperature of the bath should be 100° F.
+by the thermometer, and this should never
+be guessed at, because the water feels very
+much warmer to the sensitive skin of
+the baby than to the hand of an adult.
+The head and face are first washed
+with the warm water and carefully dried.
+The body is then bathed with the warm
+water and soap, rinsed with clear water,
+wrapped in soft towels, and dried by patting.
+Great care must be taken to dry<span class="pagenum" id="Page_32">[32]</span>
+thoroughly all the folds and creases of the
+skin. A little lanolin or sweet oil should
+then be gently rubbed into the folds or a
+little talcum powder may be dusted on the
+neck, behind the ears, under the arms and
+knees, in the groin, and on the buttocks.
+Wipe away all superfluous powder, as it is
+apt to get wet and cake, and will then
+irritate the skin.</p>
+
+<p>For the tub bath see page <a href="#PREPARATION_FOR_THE_BATH">63</a>.</p>
+
+<p><b>Dressing the baby.</b> In dressing and
+undressing the baby the garment should
+be put on and off over the feet. This will
+prevent dust or other foreign particles on
+the clothing from entering the eyes, nose,
+or mouth of the baby. After the baby is
+dressed his nose, ears, and eyes should
+be cleaned by means of twisted cotton
+dipped in a two per cent solution of boric
+acid. A fresh piece of cotton should be
+used for each eye, ear, and nostril and
+should then be burned.</p>
+
+<p><span class="pagenum" id="Page_33">[33]</span></p>
+
+
+<p class="center"><span class="smcap">Development</span></p>
+
+<p><b>Crying.</b> It is necessary for a newborn
+baby to cry a little every day; this tends
+to expand his lungs.</p>
+
+<p><b>Sight.</b> A newborn baby is not able to
+distinguish objects, but his eyes are very
+sensitive to light and must be carefully
+protected.</p>
+
+<p><b>Hearing.</b> The hearing soon becomes
+acute; therefore loud and sudden noises
+should be avoided, as they startle and excite
+the baby. It is well to keep him in
+a room away from noise and confusion.</p>
+
+<p><b>Speech.</b> When six or seven months old
+a baby begins to try to utter words and
+will usually be able to say a few words
+when nine or ten months old. The average
+child, however, does not begin to form
+sentences of more than two or three words
+until he is about eighteen months or two
+years of age.</p>
+
+<p><span class="pagenum" id="Page_34">[34]</span></p>
+
+<figure class="figcenter illowe50" id="image034">
+  <img class="w100" src="images/image034.jpg" alt="A bed for infants">
+  <figcaption class="caption"><p>THE BABY’S BED</p></figcaption>
+</figure>
+
+<p><b>Baby’s bed.</b> The newborn baby sleeps
+about nine tenths of the time. He should
+have a bed by himself. The first bed may
+be made in an ordinary clothes basket or
+in a light box. Table padding makes a
+good mattress if folded to six thicknesses,
+because it is easily laundered and is inexpensive.
+When washed it should be dried
+out of doors in the sunshine. If the material
+used in the crib mattress is excelsior,
+it should be made as smooth as possible,
+with a soft pad placed on top of it. Curled<span class="pagenum" id="Page_35">[35]</span>
+hair is more expensive, but is light, cool,
+and easily cleansed. The crib mattress
+should always be protected by a piece of
+rubber sheeting covered with a soft pad.
+The baby’s bed should be raised at least
+twelve inches from the floor to escape drafts.</p>
+
+<p><b>Pillows.</b> The baby’s head should not be
+elevated, as he will take more air into his
+lungs when no pillow is used. If the
+mother wishes, she may place a folded soft
+cloth under the baby’s head.</p>
+
+<p><b>Birth registration.</b> See that the baby’s
+birth is promptly and accurately registered.
+Later he may need his birth certificate to
+prove his</p>
+
+<ol class="pad4">
+<li>Identity</li>
+<li>Legitimacy</li>
+<li>Right to inherit property</li>
+<li>Right to enter school</li>
+<li>Right to seek employment</li>
+<li>Right to vote</li>
+<li>Right to hold office</li>
+<li>Privilege to travel in other countries</li>
+</ol>
+
+<p><span class="pagenum" id="Page_36">[36]</span></p>
+
+
+<div class="bbox wd80" style="padding: 1em; margin-bottom: 1em" id="MODEL_BIRTH_CERTIFICATE">
+<p class="center noindent fs150 gothic">Registry Department</p>
+<p class="center noindent">CITY OF ________</p>
+<p class="center noindent">County of _____, State of _____</p>
+<p class="center noindent"><span class="smcap">City Hall</span></p><br>
+<p>The following is an abstract from the <span class="smcap">Record
+of Births</span> in said City:</p>
+<p class="right"><i>No.</i> _____</p>
+<p class="noindent" style="display: inline-block">__________________________________</p>
+<table style="display: inline-block">
+<tr>
+<td rowspan="2" class="fs200">{</td>
+<td>SON</td>
+<td rowspan="2" class="fs200">}</td>
+<td></td>
+</tr>
+<tr>
+<td>DAU.</td>
+<td>of</td>
+</tr>
+</table>
+<p class="noindent">
+____________________________________________<br>
+<br>
+was born in ________________________________</p>
+<p><span class="gothic">I hereby certify</span> that the above is a true copy
+from the <span class="smcap">Record of Births</span> in the Custody of the
+City Registrar.</p>
+<p class="bbox center noindent" style="display: inline-block; padding: 1em">
+CITY<br>
+SEAL
+</p>
+<p class="right" style="display: inline-block">
+__________________________________<br>
+<i>City Registrar</i></p>
+</div>
+<p class="noindent center">MODEL BIRTH CERTIFICATE</p>
+
+
+<p><b>Protection against flies and mosquitoes.</b>
+The baby must be protected from flies
+and mosquitoes because malaria and other<span class="pagenum" id="Page_37">[37]</span>
+diseases may be transmitted in this way.
+Flies are carriers of filth and disease
+germs and therefore should never be
+allowed to touch the baby’s lips or the
+baby’s bottle.</p>
+
+<p>It is important that netting be placed
+over the baby’s bed and be large enough
+to tuck in under the mattress. It should
+not hang down over the sides of the bed.</p>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_38">[38]</span></p>
+
+<h2 class="nobreak" id="CHAPTER_IV">CHAPTER IV<br>
+<br>
+<span class="bold fs80">BREAST FEEDING</span></h2>
+</div>
+
+<div class="blockquot">
+
+<p><b>Suggestions for demonstrations.</b> 1. Demonstrate
+how to hold the baby when feeding him.
+2. Demonstrate how to weigh the baby.</p>
+</div>
+
+
+<p>Every mother should nurse her baby
+if she is well and has the milk; it is
+her most important duty for the time
+being, and all other things should be
+secondary to it.</p>
+
+<p><b>The reasons.</b> Breast milk is nature’s
+food for the baby. It is fresh, sterile,
+and always at hand. It is the least expensive
+food that can be given, and contains
+the proper elements of food in the
+right proportions.</p>
+
+<p>Breast-fed babies seldom have bowel
+troubles—which are apt to be so fatal
+in bottle-fed babies, especially in hot<span class="pagenum" id="Page_39">[39]</span>
+weather. Ten bottle-fed babies die to one
+fed on the breast.</p>
+
+<p><b>Hours for nursing.</b> At the end of the
+first twenty-four hours the baby is put
+to the breast. Because of the scant
+quantity of milk in the breasts, every
+four or six hours is often enough for the
+first two days. Until the mother’s milk
+comes no food should be given to the
+baby except a little cool boiled water,
+not sweetened. If the milk is very
+scanty, the physician will probably order
+a few bottle feedings. For a normal baby
+the following feedings are recommended:</p>
+
+<table class="autotable">
+<tr>
+<td class="br bb bt bl center"><span class="smcap">From Birth<br>To Three<br>Months Old</span></td>
+<td class="bb bt br center"><span class="smcap">From Three<br>To Eight<br>Months Old</span></td>
+<td class="bb bt br center"><span class="smcap">From Eight<br>Months To <br>One Year Old</span></td>
+</tr>
+<tr>
+<td class="br bl tdc"><span class="smcap">6 A. M.</span></td>
+<td class="br tdc"><span class="smcap">6 A. M.</span></td>
+<td class="br tdc"><span class="smcap">6 A. M.</span></td>
+</tr>
+<tr>
+<td class="br bl tdc"><span class="smcap">9 A. M.</span></td>
+<td class="br tdc"><span class="smcap">9:30 A. M.</span></td>
+<td class="br tdc"><span class="smcap">10 A. M.</span></td>
+</tr>
+<tr>
+<td class="br bl tdc"><span class="smcap">12 noon</span></td>
+<td class="br tdc"><span class="smcap">1 P. M.</span></td>
+<td class="br tdc"><span class="smcap">2 P. M.</span></td>
+</tr>
+<tr>
+<td class="br bl tdc"><span class="smcap">3 P. M.</span></td>
+<td class="br tdc"><span class="smcap">4:30 P. M.</span></td>
+<td class="br tdc"><span class="smcap">6 P. M.</span></td>
+</tr>
+<tr>
+<td class="br bl tdc"><span class="smcap">6 P. M.</span></td>
+<td class="br tdc"><span class="smcap">8 P. M.</span></td>
+<td class="br tdc"><span class="smcap">10 P. M.</span></td>
+</tr>
+<tr>
+<td class="br bl tdc"><span class="smcap">9 P. M.</span></td>
+<td class="br tdc"><span class="smcap">12 midnight</span></td>
+<td class="br"></td>
+</tr>
+<tr>
+<td class="br bl bb tdc"><span class="smcap">12 midnight</span></td>
+<td class="br bb"></td>
+<td class="br bb"></td>
+</tr>
+</table>
+
+<p><span class="pagenum" id="Page_40">[40]</span></p>
+
+<p>The mother should nurse her baby
+regularly and give nothing between feedings
+except unsweetened boiled water.
+If the baby is awakened at feeding
+times during the day, he will soon form
+the habit of nursing regularly.</p>
+
+<p><b>How to hold the baby.</b> While the baby
+is nursing do not hold him too closely
+to the breast, as he must have plenty of
+air to breathe. If the baby is nursing
+from the right breast, he should be held
+on the right arm, and the mother’s left
+hand should press the breast away from
+the baby’s nose.</p>
+
+<p><b>Length of nursing time.</b> The baby
+should not nurse more than ten minutes
+at first nor more than twenty minutes at
+any time. He should not be allowed to
+fall asleep while nursing nor be permitted
+to take his meal too rapidly, as this latter
+may cause him to hiccup. If a baby
+nurses too rapidly, withdraw the nipple<span class="pagenum" id="Page_41">[41]</span>
+from his mouth for a few seconds. This
+may be done every three or four minutes.</p>
+
+<p><b>Baby’s stomach.</b> The infant generally
+takes more fluid at each feeding than the
+stomach can hold at one time. Almost
+as soon as the milk is swallowed it begins
+to pass into the intestines. Breast
+milk is digested and passed on more
+rapidly than cow’s milk.</p>
+
+<p><b>Mixed feedings.</b> When the mother’s
+milk is of good quality, but is not sufficient
+in quantity to satisfy the baby, it is
+necessary to give him additional food.
+This is done by giving alternate feedings
+of the breast milk and modified
+milk. Mixed feedings should always be
+given under the doctor’s directions. Every
+bit of breast milk helps the baby, because
+it tends to make the digestion of artificial
+food easier.</p>
+
+<p><b>Advice to nursing mothers.</b> Keep yourself
+well. As long as you are well the<span class="pagenum" id="Page_42">[42]</span>
+baby will keep well. Even though you
+have but little milk at first, do not get
+discouraged; be patient and persevering.
+You should have lunches of milk and
+gruel—one in the middle of the morning,
+one in the afternoon, and another at
+bedtime. Remember that an active, cheerful
+mind is an important factor in good
+health. Nothing upsets a baby more
+quickly than a nervous, irritable mother.</p>
+
+<p><b>Diet of a nursing woman.</b> The meals
+should be simple and nutritious and should
+include a large amount of liquid. Milk,
+cereals, eggs, and soups should form the
+principal part of the diet. Some of the
+foods to be avoided by a nursing woman
+are cabbage, onions, garlic, and sour fruits.</p>
+
+<p><b>Weaning.</b> The healthy baby should be
+weaned from the breast between the
+ninth and the eleventh month. Every
+baby ought to be weaned entirely at the
+age of one year, but it is better not to<span class="pagenum" id="Page_43">[43]</span>
+wean him during the summer. If a baby
+has been taught to take water from a
+spoon or cup, there will be no trouble
+at the weaning period in having him take
+his milk from a cup. Weaning should
+take place gradually. During the process
+the mother should take less liquids and
+usually some laxative to produce free
+movements of the bowels.</p>
+
+<p><b>Weigh the baby.</b> The baby should be
+weighed once a week. Scales similar to
+grocers’ scales, with a basket attached,
+may be used, as they are more accurate
+than spring scales.</p>
+
+<p><b>Directions for weighing.</b> Have the scales
+in a warm place, protected from drafts.
+Undress the baby, wrap him in a small
+blanket, and place him in the basket
+on the scales. Write down the total
+weight; then lift the baby out, weigh the
+basket and blanket together, and subtract
+this amount from the first weight. The<span class="pagenum" id="Page_44">[44]</span>
+average healthy baby weighs from seven
+to seven and one-half pounds at birth,
+and his average length is twenty inches.
+A healthy baby usually doubles his weight
+at the end of the fifth month, and by the
+end of the first year weighs three times
+as much as at birth. For instance, if
+he weighs seven pounds at birth, he<span class="pagenum" id="Page_45">[45]</span>
+should weigh fourteen pounds at the end
+of the fifth month and twenty-one pounds
+at the end of the first year.</p>
+
+<figure class="figcenter illowe50" id="image044">
+  <img class="w100" src="images/image044.jpg" alt="A baby in a basket on a scale
+that is being read by a woman">
+  <figcaption class="caption"><p>WEIGHING THE BABY</p></figcaption>
+</figure>
+
+<p>If the length is twenty inches at birth,
+the baby should grow about four inches
+during the first five months and eight
+inches during the first year. The following
+table shows the actual gain in weight
+of a healthy baby that was breast fed:</p>
+
+<table class="autotable">
+<tr>
+<td>Weight at birth</td>
+<td>7½</td>
+<td>pounds</td>
+</tr>
+<tr>
+<td>Weight at age of two months</td>
+<td>11¼</td>
+<td>pounds</td>
+</tr>
+<tr>
+<td>Weight at age of four months</td>
+<td>16</td>
+<td>pounds</td>
+</tr>
+<tr>
+<td>Weight at age of six months</td>
+<td>18</td>
+<td>pounds</td>
+</tr>
+<tr>
+<td>Weight at age of eight months</td>
+<td>20</td>
+<td>pounds</td>
+</tr>
+<tr>
+<td>Weight at end of first year</td>
+<td>21</td>
+<td>pounds</td>
+</tr>
+</table>
+
+<p>A child may be in good health and yet
+not conform to these averages. This need
+cause no uneasiness, providing the child
+is well and gains in weight.</p>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_46">[46]</span></p>
+
+<h2 class="nobreak" id="CHAPTER_V">CHAPTER V<br>
+<br>
+<span class="bold fs80">BOTTLE FEEDING</span></h2>
+</div>
+
+<div class="blockquot">
+
+<p><b>Suggestions for demonstrations.</b> <b>1.</b> Show and
+demonstrate the care of utensils to be used in
+modifying milk. <b>2.</b> Demonstrate the process of
+modifying milk. <b>3.</b> Demonstrate the process of
+pasteurizing milk.</p>
+</div>
+
+
+<p><b>Foods.</b> Condensed milk and proprietary
+foods should be used only in emergency
+or on the advice of a physician.
+They are of value only in the rare instances
+when a baby cannot digest cow’s
+milk or when prescribed by a physician.</p>
+
+<p><b>Cow’s milk.</b> If a baby cannot have
+breast milk, the next best food is properly
+modified cow’s milk. Cow’s milk, when
+used for the baby, must be fresh. It
+should be delivered in sealed bottles.
+Milk sold from open cans should never<span class="pagenum" id="Page_47">[47]</span>
+be given to a child. Milk should not be
+left standing on the doorstep nor in a
+warm kitchen, but should be placed in the
+ice box as soon as received, where it
+should be kept covered and at a temperature
+between 35° and 45° F.</p>
+
+<p><b>Choice of milk.</b> Whenever possible, certified
+milk should be used. <em>Certified milk</em>
+is milk produced under conditions that
+conform to certain standards of cleanliness
+laid down by the state. Uncertified
+milk may of course often be used without
+danger, but if there is any question about
+its purity, it should be pasteurized (see
+page <a href="#PASTEURIZING">52</a> for directions for pasteurizing).</p>
+
+
+<p class="center">COMPARISON OF MOTHER’S MILK AND
+COW’S MILK</p>
+
+<table class="autotable">
+<tr class="bb bl bt br">
+<td class="br"></td>
+<td class="br"><span class="smcap">Mother’s Milk</span></td>
+<td><span class="smcap">Cow’s Milk</span></td>
+</tr>
+<tr class="bl br">
+<td class="br wd30">Fat</td>
+<td class="br">3.50 per cent</td>
+<td>4.00 per cent</td>
+</tr>
+<tr class="bl br">
+<td class="br">Sugar</td>
+<td class="br">7.00 per cent</td>
+<td>4.50 per cent</td>
+</tr>
+<tr class="br bl">
+<td class="br">Protein</td>
+<td class="br">1.25 per cent</td>
+<td>3.50 per cent</td>
+</tr>
+<tr class="br bl bb">
+<td class="br">Salts</td>
+<td class="br">.20 per cent</td>
+<td>.70 per cent</td>
+</tr>
+</table>
+
+<p><span class="pagenum" id="Page_48">[48]</span></p>
+
+<p>No matter how cow’s milk is modified,
+it differs from human milk in certain
+other ways that we do not understand,
+and this renders it less desirable for infant
+feeding than human milk.</p>
+
+<p><b>Modified milk.</b> The formula for the
+baby’s food must be given by a nurse or
+a physician. The following general directions
+for feeding a baby that does not require
+a special formula have been prepared
+by a committee of the American Medical
+Association:</p>
+
+<div class="blockquot">
+
+<p>Beginning on the third day the average baby
+should be given three ounces of milk daily, diluted
+with seven ounces of water. To this
+should be added one tablespoon of limewater
+and two level teaspoons of sugar. This should
+be given in seven feedings.</p>
+
+<p>At one week the average child requires five
+ounces of milk daily, which should be diluted
+with ten ounces of water. To this should be
+added one and one-half even teaspoons of sugar
+and one ounce of limewater. This should be<span class="pagenum" id="Page_49">[49]</span>
+given in seven feedings. The milk should be
+increased by one-half ounce about every four
+days. The water should be increased by one-half
+ounce every eight days.</p>
+</div>
+
+<figure class="figcenter illowe50" id="image049">
+  <img class="w100" src="images/image049.jpg" alt="Two women preparing milk">
+  <figcaption class="caption"><p>MODIFICATION OF THE MILK</p></figcaption>
+</figure>
+
+<p><span class="pagenum" id="Page_50">[50]</span></p>
+
+<div class="blockquot">
+
+<p>At three months the average child requires
+sixteen ounces of milk daily, which should be
+diluted with sixteen ounces of water. To this
+should be added three tablespoons of sugar and
+two ounces of limewater. This should be given
+in six feedings. The milk should be increased
+by one-half ounce every six days. The water
+should be reduced by one-half ounce about
+every two weeks.</p>
+
+<p>At six months the average child requires
+twenty-four ounces of milk daily, which should
+be diluted with twelve ounces of water. To this
+should be added two ounces of limewater and
+three even tablespoons of sugar. This should
+be given in five feedings. The amount of milk
+should be increased by one-half ounce every week.
+The milk should be increased only if the child
+is hungry and digesting his food well. It should
+not be increased unless he is hungry, nor if he
+is suffering from indigestion, even though he
+seems hungry.</p>
+
+<p>At nine months the average child requires
+thirty ounces of milk daily, which should be
+diluted with ten ounces of water. To this should
+be added two even tablespoons of sugar and two<span class="pagenum" id="Page_51">[51]</span>
+ounces of limewater. This should be given in
+five feedings. The sugar added may be milk
+sugar or, if this cannot be obtained, cane (granulated)
+sugar or maltose (malt sugar). At first
+plain water should be used to dilute the milk.</p>
+
+<p>At three months, sometimes earlier, a weak
+barley water may be used in the place of plain
+water; it is made of one-half level tablespoon of
+barley flour to sixteen ounces of water and cooked
+for twenty minutes. (See <a href="#APPENDIX_B">Appendix B</a>.)</p>
+
+<p>Fill the feeding bottles, cork them, and put
+on the ice. If the milk is not certified, it should
+be pasteurized.</p>
+</div>
+
+<p><b>Utensils.</b> The utensils used for preparing
+the baby’s food should be reserved
+exclusively for that purpose. The best
+material for these utensils is enamel or
+agateware.</p>
+
+
+<p class="center">LIST OF UTENSILS</p>
+
+<ol class="pad4">
+<li>A big covered kettle or dish pan. This
+should measure at least eighteen inches in diameter,
+so that all other utensils may be boiled in
+it at one time.
+<span class="pagenum" id="Page_52">[52]</span>
+</li>
+<li>Bottles. There should be as many bottles
+as there are feedings in one day.</li>
+<li>Nipples. It is important to select those
+that can be turned wrong side out to be cleaned.</li>
+<li>A bottle brush.</li>
+<li>A nipple brush.</li>
+<li>A sixteen-ounce graduated measuring glass.</li>
+<li>A tablespoon, teaspoon, and cream dipper.</li>
+<li>A teapot of enamel or agateware in which
+sterile water is kept for use as needed.</li>
+<li>A wire rack for holding bottles.</li>
+<li>A roll of nonabsorbent cotton for the
+stoppers for the feeding bottles.</li>
+</ol>
+
+<p id="PASTEURIZING"><b>Pasteurizing.</b> This process consists of
+heating the milk to 145° F. and keeping
+it at this temperature for thirty minutes.
+The following method may be used: Fill
+the bottles with the modified milk and
+place in the wire rack. Put the rack in
+a dish of water, with the water just above
+the level of the milk. Suspend a milk
+thermometer in the water and heat until
+the thermometer registers 145° F. Keep<span class="pagenum" id="Page_53">[53]</span>
+at this temperature for thirty minutes,
+then take out the rack and cork the
+bottles at once. Place carefully in a dish
+of cool water or put an inverted basin over
+the rack containing the bottles and set
+under the cold-water faucet. Cool quickly
+and place on the ice at once.</p>
+
+<figure class="figcenter illowe50" id="image053">
+  <img class="w100" src="images/image053.jpg" alt="Bottles of milk in a pot
+suspended in a pot of water">
+  <figcaption class="caption"><p>PASTEURIZING THE BABY’S MILK</p></figcaption>
+</figure>
+
+<p>If no pasteurizing outfit is at hand, the
+bottles of milk may be heated in a double
+boiler until the steam arises. Continue<span class="pagenum" id="Page_54">[54]</span>
+heating at this temperature for fifteen
+minutes. If the pasteurized milk is used
+for a long time, it is well to give the baby
+orange juice to prevent rickets and scurvy.
+This should be given in the morning, regularly,
+three quarters of an hour before
+feeding time. One teaspoonful should be
+given at first, and the amount gradually
+increased up to one tablespoonful.</p>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_55">[55]</span></p>
+
+<h2 class="nobreak" id="CHAPTER_VI">CHAPTER VI<br>
+<br>
+<span class="bold fs80">CARE OF THE BABY’S FOOD</span></h2>
+</div>
+
+
+<div class="blockquot">
+
+<p><b>Suggestions for demonstrations.</b> <b>1.</b> Show a
+homemade refrigerator. <b>2.</b> Demonstrate the care
+of bottles. <b>3.</b> Demonstrate the care of rubber
+nipples. <b>4.</b> Demonstrate the process of sterilizing
+water.</p>
+</div>
+
+<p><b>Homemade refrigerator.</b> An ice box to
+keep the baby’s milk in good condition
+may be made in the following way at
+very little cost: In a wooden box about
+eighteen inches square and of about the
+same depth, put a layer of sawdust three
+inches deep. Then put a ten-quart pail
+(or a larger one) in the center of the box.
+Add more sawdust and put a cardboard
+collar around the pail, to keep the sawdust
+in place. It is also well to put a
+layer of cheesecloth over the sawdust.<span class="pagenum" id="Page_56">[56]</span>
+Inside this pail place another (smaller) one,
+to hold the ice. The bottles are put in
+the larger pail, which should be securely
+covered, and a bag of sawdust is placed
+over it. The box should be tightly closed
+by a wooden cover lined with several
+thicknesses of newspaper. The inner pail
+should be taken out and cleaned every
+morning.</p>
+
+<figure class="figcenter illowe50" id="image056">
+  <img class="w100" src="images/image056.jpg" alt="A pail filled with bottles
+in a padded box">
+  <figcaption class="caption"><p></p>
+
+INNER PAIL<br>
+BOTTLES<br>
+ICE<br>
+PAIL COVER<br>
+PADDED COVER TO BOX<br>
+
+<p>HOMEMADE REFRIGERATOR</p></figcaption>
+</figure>
+
+<p>The box described above will keep
+cold for twenty-four hours with five cents’
+worth of ice in it. The cover should not
+be left off any longer than is necessary
+to remove the bottles.</p>
+
+<p><span class="pagenum" id="Page_57">[57]</span></p>
+
+<figure class="figcenter illowe36_75" id="image057">
+  <img class="w100" src="images/image057.jpg" alt="A woman using a funnel to fill
+bottles">
+  <figcaption class="caption"><p>FILLING THE BABY’S BOTTLES</p></figcaption>
+</figure>
+
+<p><b>Care of bottles.</b> New bottles should be
+placed in a kettle of cold water, put on
+the stove, and boiled for twenty minutes.<span class="pagenum" id="Page_58">[58]</span>
+They should then be removed from the
+stove, but left in the kettle until the water
+cools. Bottles treated in this way will not
+break easily.</p>
+
+<p>As soon as the baby has finished feeding,
+the bottles should be rinsed with cold
+water, cleaned with a bottle brush in clear
+hot water, then filled with fresh water
+and set aside. In the morning, before the
+day’s food is prepared, all bottles should
+be scrubbed with hot water and Ivory
+soap; they should then be rinsed thoroughly
+in several waters, boiled in a solution
+consisting of two teaspoonfuls of soda
+to one quart of water, and rinsed in clear
+boiled water.</p>
+
+<p><b>Care of bottle nipples.</b> New nipples
+should always be scrubbed and boiled for
+three minutes before being used. It is
+better to buy nipples that can be turned
+inside out. There should always be at
+least two nipples clean and ready for use.<span class="pagenum" id="Page_59">[59]</span>
+Immediately after the feeding the nipple
+should be removed from the bottle, washed
+in cold water, scrubbed inside and outside,
+rinsed well, and placed in a jar of sterile
+water or a two per cent solution of boric
+acid. Nipples should be boiled daily for
+about three minutes.</p>
+
+<p>When it is time to feed the baby the
+bottle should be taken from the ice box
+and placed (still corked) in a dish of water
+deep enough to come above the milk line.
+The water is to be heated until the milk is
+warmed. The water should not boil, as that
+renders the milk less easy to digest and is
+apt to make the baby constipated. A clean
+cloth should be placed in the bottom of the
+dish or kettle, to prevent the bottle from
+slipping and breaking. The temperature
+of the milk should be tested by dropping
+some of it on the inner surface of the
+arm. If it feels warm to the skin, it is
+the correct temperature for the baby.</p>
+
+<p><span class="pagenum" id="Page_60">[60]</span></p>
+
+<p>The mother should never put the nipple
+into her own mouth to test the temperature.
+The nipple should be handled only
+by the neck; the part that goes into the
+baby’s mouth should never be touched.</p>
+
+<figure class="figcenter illowe45_5625" id="image060">
+  <img class="w100" src="images/image060.jpg" alt="A hand dripping milk on the inside
+of the wrist of the other hand">
+  <figcaption class="caption"><p>TESTING THE TEMPERATURE OF THE MILK</p></figcaption>
+</figure>
+
+<p><b>Holding the baby while feeding.</b> The
+baby should be held by the mother or
+nurse in the same position as for breast
+feeding. The bottle should be held so<span class="pagenum" id="Page_61">[61]</span>
+that the neck is continually filled, in order
+that the baby may not suck in air. The
+feeding should be finished in twenty
+minutes. If the baby nurses too rapidly,<span class="pagenum" id="Page_62">[62]</span>
+withdraw the nipple for a moment several
+times during the feeding. If the baby
+falls asleep, the bottle should be removed,
+and no more milk should be given until
+the next feeding time; he should not
+be permitted to nurse a little and then
+sleep a little, and thus unduly prolong
+the feeding.</p>
+
+<figure class="figcenter illowe37_875" id="image061">
+  <img class="w100" src="images/image061.jpg" alt="A girl feeding a baby with a bottle">
+  <figcaption class="caption"><p>CORRECT WAY TO HOLD THE BABY WHILE FEEDING</p></figcaption>
+</figure>
+
+<p><b>Sterile water to drink.</b> The water which
+is given the baby to drink should first be
+boiled and then put where it will cool.
+Before it is given it should be slightly
+warmed.</p>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_63">[63]</span></p>
+
+<h2 class="nobreak" id="CHAPTER_VII">CHAPTER VII<br>
+<br>
+<span class="bold fs80">CARE OF THE BABY’S BODY</span></h2>
+</div>
+
+<div class="blockquot">
+
+<p><b>Suggestions for demonstrations.</b> <b>1.</b> Demonstrate
+the preparation of a two per cent solution of
+boric acid. <b>2.</b> Demonstrate giving the baby a tub
+bath. <b>3.</b> Demonstrate giving the baby a bran bath.
+<b>4.</b> Demonstrate protecting the baby from drafts.</p>
+</div>
+
+<p><b id="PREPARATION_FOR_THE_BATH">Preparation for the bath.</b> A tub bath
+may be given to the baby as early as the
+sixth or ninth day. The morning bath
+should be given three quarters of an
+hour before the nine o’clock feeding. The
+mother should wash her hands carefully
+before handling the baby. The temperature
+of the room in which the bath is
+given should not be below 72° F. If the
+room is too hot—so hot that the baby
+perspires—there is grave danger of his
+being chilled when the bath is over.</p>
+
+<p><span class="pagenum" id="Page_64">[64]</span></p>
+
+<figure class="figcenter illowe43_5625" id="image064">
+  <img class="w100" src="images/image064.jpg" alt="A girl bathing a baby in a small tub">
+  <figcaption class="caption"><p>BATHING THE BABY</p></figcaption>
+</figure>
+
+<p>The tub should never be put on the
+floor, but always on a chair or low table.
+This makes it easier for the mother to
+give the bath and also helps protect the
+baby from dust and drafts. Screens should
+be used to secure complete protection<span class="pagenum" id="Page_65">[65]</span>
+from drafts. For the first four weeks the
+temperature of the water should be between
+98° and 100° F. As the baby grows
+older the temperature should be gradually
+lowered. Suitable temperatures are</p>
+
+<p class="noindent pad4">
+100° F. at birth<br>
+<span style="margin-left: 0.5em;">98° F. at one month</span><br>
+<span style="margin-left: 0.5em;">95° F. at three months</span><br>
+<span style="margin-left: 0.5em;">90° F. at six months</span><br>
+<span style="margin-left: 0.5em;">85° F. at twelve months</span><br>
+</p>
+
+<p>If the baby is bluish and does not react
+well, it means that the water was not the
+right temperature or that he was in the
+water too long. Always use a bath thermometer;
+never guess at the temperature.</p>
+
+<p>After everything is prepared for the
+bath and the clean clothing warmed, undress
+the baby. He should be weighed
+once a week, at this time.</p>
+
+<p><b>The bath.</b> He should then be wrapped in
+a warm blanket and held in the lap while his
+eyes, ears, nose, face, and head are washed.</p>
+
+<p><span class="pagenum" id="Page_66">[66]</span></p>
+
+<p><em>The nose and the ears.</em> The inside of the
+baby’s nose should be carefully cleaned
+every day with a soft, wet twist of absorbent
+cotton. The external ears should be
+washed daily. No attempt should be made
+to clean the inside of the ears except with
+a piece of cotton wound around the end
+of the little finger.</p>
+
+<p><em>The eyes.</em> The eyes should be cleaned
+each morning, at first with a two per cent
+solution of boric acid, and after two months
+with warm sterile water. A separate piece
+of cotton should be used for each eye.
+The lids should be washed from the nose
+toward the outer corner of the eye. If the
+eyes show a mattery secretion and the
+lids are swollen, a physician should be
+consulted at once. Infection of the eyes
+has often resulted in blindness.</p>
+
+<p><em>The mouth.</em> The baby’s mouth should
+be cleaned once a day by the use of a
+swab, made by twisting a bit of absorbent<span class="pagenum" id="Page_67">[67]</span>
+cotton on a wooden toothpick, wet in
+a two per cent solution of boric acid.
+After each feeding a teaspoonful of warm,
+sterile water may be given to wash the
+milk down. The old method of cleansing
+the mouth with a piece of gauze twisted
+over the finger frequently injured the
+delicate tissues. Except in emergency the
+finger should not be put inside the baby’s
+mouth.</p>
+
+<p><em>The scalp.</em> For the first few weeks
+the baby’s scalp should be washed at the
+time of the bath. If yellow scales form,
+rub warm olive oil or vaseline into the
+scalp at night, and in the morning wash
+it with warm water and pure castile soap,
+rinsing thoroughly. If the scales do not
+come off, repeat the operation as many
+times as necessary. Do not use a comb
+to remove the scales, as this will irritate
+the scalp and render the condition
+worse.</p>
+
+<p><span class="pagenum" id="Page_68">[68]</span></p>
+
+<p><em>The nails.</em> The baby’s nails should be
+cleaned with a toothpick over which has
+been twisted a little absorbent cotton.
+The nails should be carefully cut with
+small scissors in order to prevent him
+from scratching himself.</p>
+
+<p><em>The body.</em> It is best to wash the baby’s
+entire body with warm water and soap
+before placing him in the tub. The bath
+in the tub is for rinsing off the soap and
+for exercise. He should be turned over so
+that his chest will rest on the mother’s
+forearm while his feet touch the bottom
+of the tub. Teach the baby to like the
+bath, and he will not be frightened. He
+should not stay in the water more than
+two or three minutes, and when lifted out
+should be wrapped in a soft, warm bath
+towel. He should be dried quickly by
+gently patting the skin with soft towels,
+not by wiping. Take special care to dry
+all the folds and creases; rub these with<span class="pagenum" id="Page_69">[69]</span>
+sweet oil or lanolin, or powder them carefully.
+Powder, if used, should be lightly
+dusted on the neck, behind the ears, under
+the arms and knees, in the groin, and on
+the buttocks. Rub off all superfluous
+powder; if it gets wet and hardens, it
+will irritate the skin.</p>
+
+<p><em>Dressing.</em> The baby should always be
+dressed while lying on his back or on a
+bed or pillow. Pin the flannel band at the
+side with small safety pins; then put on
+the shirt and be careful that the draw
+string at the neck is not tied too tightly.
+Next put on the diaper snugly. The gertrude
+is placed inside the slip and both
+are put on at the same time. These two
+garments should be drawn on over the
+baby’s feet. If the weather is cool, the
+baby should be wrapped in a flannel
+blanket.</p>
+
+<p><em>Bran bath.</em> If the baby’s skin is sensitive
+or if he has heat rash, a bran bath<span class="pagenum" id="Page_70">[70]</span>
+will prove beneficial. Prepare this by putting
+bran into a cheesecloth bag six inches
+square, and soaking this in the bath until
+the water is milky. Do not use soap with
+the bran bath, nor with an ordinary bath
+when the baby’s skin is sensitive.</p>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_71">[71]</span></p>
+
+<h2 class="nobreak" id="CHAPTER_VIII">CHAPTER VIII<br>
+<br>
+<span class="bold fs80">THE BABY’S CLOTHING</span></h2>
+</div>
+
+
+<div class="blockquot">
+
+<p><b>Suggestions for demonstrations.</b> <b>1.</b> Show samples
+of clothing for a baby. <b>2.</b> Demonstrate how
+to dress a baby in hot weather. <b>3.</b> Demonstrate
+how to dress a baby in cold weather.</p>
+</div>
+
+<p><b>Clothes.</b> The clothing must always be
+roomy and loose and adapted to the
+season, climate, and temperature.</p>
+
+
+<p class="pad2">FIRST SET OF CLOTHES</p>
+
+<p class="noindent pad4">
+Four flannel binders<br>
+Four knitted bands<br>
+Three shirts and three nightgowns<br>
+Three flannel gertrudes<br>
+Three dozen diapers<br>
+Four long white dresses<br>
+</p>
+
+<p><b>Flannel bands.</b> These bands should be
+made of all-wool flannel, four inches wide
+and about twenty-eight inches long, that<span class="pagenum" id="Page_72">[72]</span>
+is, long enough to reach twice around the
+baby’s body. They should have no hems
+and should be fastened at the left side
+with small safety pins. Bands must be
+adjusted with great care; they should not
+be drawn too tightly, but should be made
+so snug that they will neither slip down
+and bind the baby’s legs nor slip up and
+interfere with the expansion of the chest.</p>
+
+<figure class="figcenter illowe50" id="image072">
+  <img class="w100" src="images/image072.jpg" alt="An assortman of baby clothes">
+  <figcaption class="caption"><p>BABY CLOTHES</p></figcaption>
+</figure>
+
+<p><span class="pagenum" id="Page_73">[73]</span></p>
+
+<p><b>Knitted bands.</b> Knitted bands may be
+of wool and cotton or of silk and wool.
+Next to the smallest size is the most
+practical one to buy. It should fit snugly,
+should not wrinkle, and should not have
+rough seams.</p>
+
+<p><b>Shirts.</b> Baby shirts come in several sizes
+and weights. It is well to begin with the
+second size, as the first size is so soon outgrown.
+They should be high-necked, long-sleeved,
+and should open all the way down
+the front. Silk and wool is the best material
+because it is light in weight and wears
+well. The lightest weight should be worn
+in summer, a little heavier weight in the
+spring and fall, and a still heavier in the
+winter. There is a tendency in winter
+time to use shirts that are too heavy. The
+result is that the baby perspires too freely.
+This makes his clothing damp and renders
+him more liable to take cold. Babies
+living in overheated houses and wearing<span class="pagenum" id="Page_74">[74]</span>
+clothing that is too warm soon become
+sensitive to cold and drafts and are less
+able to resist sickness.</p>
+
+<p><b>Flannel gertrudes.</b> The gertrudes should
+be made of all-wool flannel or of wool and
+cotton. They should open on the shoulders.</p>
+
+<p><b>Dresses.</b> The dresses should be simply
+made of soft material. They should be
+laundered without starch. Both the shirt
+and the dress should be loose around
+the baby’s neck and arms, since any tightness
+or roughness in the clothing may
+irritate the skin.</p>
+
+<p><b>Nightgowns.</b> Nightgowns may be made
+of flannel, stockinet, cotton, or flannelette.
+The winter nightgowns should be long
+enough to allow the bottom to be closed
+by a draw string. This will make sure that
+the baby’s feet are covered at all times
+even if he kicks off his bedclothes.</p>
+
+<p><b>Diapers.</b> Diapers should be made of
+bird’s-eye linen, cotton, or stockinet. For<span class="pagenum" id="Page_75">[75]</span>
+a young baby they should measure about
+eighteen or twenty inches square and be
+folded but once. Never use a folded inside
+diaper, as a wad of thick material
+between the legs is injurious. A small
+inside folded cloth five inches square may
+be used, or a quilted pad about ten inches
+square may be laid under the baby after
+the diaper is on. This pad will protect the
+skirts from urine. During the mother’s
+waking hours the diaper should be changed
+as often as it is wet or soiled. In the night
+it should be changed when the baby is taken
+up for feeding or if he is restless.</p>
+
+<p>All diapers should be washed each time
+after they become wet. The soap used in
+washing them should be carefully rinsed
+out, and they should be boiled thoroughly
+at least twice a week. A careless soaking
+and wringing through one or two waters
+is not an adequate cleansing. Care must
+be taken in selecting the soap to be used<span class="pagenum" id="Page_76">[76]</span>
+in washing the diapers, since some soaps
+will cause an irritation of the skin, even
+when the clothing has been well rinsed.</p>
+
+<p><b>Stockings.</b> It is important to keep the
+baby’s legs and feet warm. Stockings and
+diapers should meet. In cold weather the
+baby should wear stockings; in summer he
+will not require any covering for his feet.</p>
+
+<p><b>Short clothes.</b> The baby should be put
+into short clothes about the fifth month,
+for at that time he begins to show signs
+of wanting to use his legs and to kick. It
+is not wise, however, to make this change
+during very cold weather.</p>
+
+<p><b>Clothing in summer.</b> The greatest care
+should be taken to see that the baby is
+not dressed too warmly in summer. Too
+heavy clothing whether in summer or in
+winter will make him perspire too freely
+and render him more liable to colds and
+bowel troubles. The mother should feel
+of his body occasionally; if she finds it<span class="pagenum" id="Page_77">[77]</span>
+constantly moist, the clothing is too warm.
+In summer only the thinnest undershirts
+should be worn, and warmer outer garments
+should be added as it grows cool
+toward night. Light-weight knitted or
+crocheted jackets are easily made.</p>
+
+<p><b>Clothing in winter.</b> Clothing should
+always be adapted to the season. If the
+baby is not dressed warmly enough, he
+will have cold hands and feet, and his legs
+and arms will be bluish. A baby must
+have fresh air, but his body must be kept
+warm. This is most important; unless
+this is done his vital force will be lessened
+and he will not gain as he should. When
+taken out he must be warmly dressed with
+a long woolen or wool-lined coat with a
+shoulder cape. In cold weather a silk cap
+with a lining of wool is best. Take care
+that the neck of the coat and the cap ribbons
+are not too tight. Leggings will be
+necessary after the baby is in short clothes.</p>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_78">[78]</span></p>
+
+<h2 class="nobreak" id="CHAPTER_IX">CHAPTER IX<br>
+<br>
+<span class="bold fs80">HABITS AND TRAINING</span></h2>
+</div>
+
+
+<div class="blockquot">
+
+<p><b>Suggestions for demonstrations.</b> <b>1.</b> Demonstrate
+how to protect a baby from flies and mosquitoes
+when sleeping. <b>2.</b> Show how to support
+a baby over a chamber.</p>
+</div>
+
+<p>Do not forget that during infancy life’s
+habits are being formed and that this
+period is of greater educational importance
+than any other of his life.</p>
+
+<p>The normal baby is well and happy.
+Babies who are properly fed and kept
+clean, who have plenty of sleep and fresh
+air and are trained in regular habits, are
+usually well and good-natured. On the
+other hand, if babies are fussy and restless
+most of the time, there is something
+wrong. Patiently search for the cause of
+the trouble and see that it is removed.</p>
+
+<p><span class="pagenum" id="Page_79">[79]</span></p>
+
+<p><b>Sleep.</b> A newborn baby sleeps about
+nine tenths of the time. He should not be
+disturbed except for necessary care. After
+he has been made comfortable and fed he
+should be laid in his crib and trained to
+go to sleep without rocking and without
+a pacifier of any kind.</p>
+
+<p>The daily amount of sleep required for
+different ages is approximately as follows:</p>
+
+<p class="noindent pad4">
+First month                18 to 20 hours<br>
+Second to sixth month      16 to 18 hours<br>
+Sixth month                14 to 16 hours<br>
+One to two years           12 to 14 hours<br>
+</p>
+
+<p>During the first year a nap in the middle
+of the forenoon, and another in the
+afternoon, is desirable. The afternoon nap
+should not be so late as to interfere with
+the night’s sleep.</p>
+
+<p>A healthy baby sleeps with his mouth
+closed. Mouth breathing is caused by
+some obstruction in the air passages, usually
+enlarged tonsils or adenoids. Other<span class="pagenum" id="Page_80">[80]</span>
+signs of the presence of adenoids may
+be restlessness at night, snoring during
+sleep, or frequent attacks of head colds.
+When any one of these symptoms is
+present the child should be placed under
+a physician’s care at once; otherwise its
+normal growth and health may be seriously
+retarded.</p>
+
+<figure class="figcenter illowe50" id="image080">
+  <img class="w100" src="images/image080.jpg" alt="A diagram of the mouth">
+  <figcaption class="caption">
+Back Tonsil From Which ADENOIDS GROW<br>
+AIRWAY &#160; TUBE TO EAR &#160; FOODWAY &#160; TONSIL &#160; TONGUE &#160; FOOD &amp; AIR &#160; FOODWAY<br>
+Adenoids<br>
+AIRWAY &#160; EAR TUBE BLOCKED &#160; FOODWAY &#160; SWOLLEN TONSIL<br>
+TONGUE &#160; FOOD &amp; AIR &#160; FOODWAY &#160; AIRWAY<br>
+Swollen Tonsil<br>
+
+<p>NOSE AND THROAT PASSAGES<br>
+Left, normal; right, abnormal</p></figcaption>
+</figure>
+
+<p>The sleeping room should be dark, well
+ventilated, and quiet. The baby should<span class="pagenum" id="Page_81">[81]</span>
+always be protected from drafts, but the air
+should be fresh and cool. After being fed
+he should be placed on his side, and after
+the next feeding, laid on the opposite side.</p>
+
+<p><b>Sleeping out.</b> After a baby is six weeks
+old he should take his naps out of doors
+when the weather permits. He should be
+protected from flies and mosquitoes and
+shielded from the sun, wind, and dust.
+Remove the shoes and loosen the clothing
+before placing him in his crib. If the
+weather is cool, his feet and body must
+be kept warm.</p>
+
+<p><b>Bowel movement.</b> The baby’s first stools
+are of tarlike consistency, with little or
+no odor. After a day or two the stools
+change to a light yellow in color, are soft
+in consistency, and have little or no odor.
+During the first week the bowels move
+two or three times a day. As the child
+grows older, one or two movements a
+day will be sufficient.</p>
+
+<p><span class="pagenum" id="Page_82">[82]</span></p>
+
+<p>The mother should begin to train the
+baby to use a chamber as early as the
+third month. He should be placed on a
+small chamber held between the mother’s
+knees, his back being supported against
+her body. In order to form the habit of
+having the bowels move regularly this
+should be done at the same hour each day.
+If the bowels do not move, insert a soap
+or glycerine suppository into the rectum.
+This will help direct the baby’s attention
+to the reason for his being placed on
+the vessel, and the suppository starts the
+bowels moving. This habit is soon established.
+The child should be placed on the
+chamber after the early morning feeding
+and again in the afternoon.</p>
+
+<p><b>Bladder.</b> Habits of regularity in emptying
+the bladder may be formed by placing
+the baby on the vessel every three or four
+hours during the day and the last thing
+at night.</p>
+
+<p><span class="pagenum" id="Page_83">[83]</span></p>
+
+<p><b>Thumb sucking.</b> The habit of thumb or
+finger sucking begins in early infancy
+and may continue until the child is six
+or eight years old if it is not broken. If
+persisted in, it may cause marked deformities
+of the jaws and teeth. When
+the thumb or finger is put into the mouth
+it should be gently but firmly removed.
+By this method the habit will be gradually
+overcome. It may be necessary to
+pin the sleeves to the side of the dress,
+so that the arms cannot be raised.</p>
+
+<p><b>Pacifier.</b> Never use a rubber nipple,
+sugar ball, or any other pacifier.</p>
+
+<p><b>Kissing.</b> Under no circumstances should
+anyone kiss a baby on the mouth. Common
+colds, tuberculosis, diphtheria, whooping
+cough, measles, and many other diseases
+are transmitted in this way. Remember
+that disease may be present in the secretions
+of the mouth and nose and on
+the lips.</p>
+
+<p><span class="pagenum" id="Page_84">[84]</span></p>
+
+<p><b>Crying.</b> A well baby never cries without
+cause. Normal crying is loud and
+forceful, and the mother will soon learn
+to distinguish it from the cry of pain,
+hunger, or discomfort. A baby has no
+other way of expressing his needs—therefore
+his cry should be heeded. When he
+cries the mother should see that he is
+made comfortable, that his hands and feet
+are warm, that his diaper is not wet, and
+that no pins are pricking him. Often
+merely a change of position is sufficient
+to quiet him. Do not take him up at the
+first cry; most babies like to be held and
+will often cry simply to be taken up.</p>
+
+<p><b>Cry due to colic.</b> The cry of colic is
+sharp and spasmodic. The baby will
+draw his legs up, and the muscles of the
+abdomen will be hard and tense.</p>
+
+<p><b>Cry due to hunger.</b> The normal cry of
+hunger is heard some time before the feeding
+is due, and is accompanied by the<span class="pagenum" id="Page_85">[85]</span>
+sucking of the thumb or the fingers. If the
+baby is not getting sufficient nourishment,
+the cry of hunger is a continuous fretful
+sound and is heard soon after a feeding.</p>
+
+<p><b>Cry due to temper.</b> The cry of temper
+is loud and strong; the baby usually kicks,
+and his body stiffens. This is easily recognized,
+because when the baby gets what
+he wants he will stop at once. When
+a baby cries from temper let him cry it
+out. The struggle will not be long, because
+he will soon learn that this crying
+is useless.</p>
+
+<p><b>Cry due to illness or fright.</b> The cry of
+most forms of illness is low, moaning, and
+fretful. The cry of fright is sudden and
+loud. The child should be taken up,
+comforted, and put down again as soon
+as he is quieted. In all cases of persistent
+crying the doctor should be called if the
+mother does not succeed in her attempts
+at quieting.</p>
+
+<p><span class="pagenum" id="Page_86">[86]</span></p>
+
+<p><b>Exercise.</b> The young baby gets his exercise
+by crying (which expands his lungs),
+also by kicking and waving the arms. It
+is important that the clothing should not
+be so tight as to interfere with these
+natural movements.</p>
+
+<figure class="figcenter illowe50" id="image086">
+  <img class="w100" src="images/image086.jpg" alt="A baby laying on its back with one
+arm raised">
+  <figcaption class="caption"><p>BABY EXERCISING</p></figcaption>
+</figure>
+
+<p>When he is in short clothes, at regular
+times each day he should be placed on
+the floor, on a thick blanket, and allowed
+to roll and creep about at will.</p>
+
+<p>Twice a day if possible, but always just
+before bedtime, the baby should be placed
+on a large bed in a warm room with all<span class="pagenum" id="Page_87">[87]</span>
+his clothing removed, and should be encouraged
+to kick and play for ten or fifteen
+minutes. He may be played with
+at this time, but must not be permitted
+to become excited.</p>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_88">[88]</span></p>
+
+<h2 class="nobreak" id="CHAPTER_X">CHAPTER X<br>
+<br>
+<span class="bold fs80">THE BABY’S TEETH</span></h2>
+</div>
+
+<div class="blockquot">
+
+<p><b>Suggestions for demonstrations.</b> <b>1.</b> Demonstrate
+the preparation of a baby’s mouth wash.
+<b>2.</b> Demonstrate the care of the baby’s first teeth.
+<b>3.</b> Demonstrate the care of the toothbrush and
+explain the necessity for such care.</p>
+</div>
+
+<p>The best way to secure sound, healthy
+teeth in a baby is for the mother during
+her girlhood to see that her own teeth are
+in good condition and to keep well and
+happy, because it is then that the foundations
+of health for life are established.
+The mother must take the best care of
+her teeth at all times and maintain her
+health in every possible way. A sickly
+mother usually means a sickly baby.</p>
+
+<p>The first teeth of the child are called
+the milk teeth and are twenty in number.<span class="pagenum" id="Page_89">[89]</span>
+In a normal baby the first tooth usually
+appears about the sixth month.</p>
+
+<p>The teeth usually come as follows:</p>
+
+<table class="autotable">
+<tr>
+<td>Two lower central incisors</td>
+<td></td>
+<td>6 to  9 months</td>
+</tr>
+<tr>
+<td>Four upper incisors</td>
+<td></td>
+<td>8 to 12 months</td>
+</tr>
+<tr>
+<td>Two lower lateral incisors</td>
+<td rowspan="2" class="fs200">}</td>
+<td rowspan="2">12 to 18 months</td>
+</tr>
+<tr>
+<td>Four anterior molars</td>
+</tr>
+<tr>
+<td>Four canines (the “eye” and “stomach” teeth)</td>
+<td></td>
+<td>18 to 24 months</td>
+</tr>
+<tr>
+<td>Four posterior molars</td>
+<td></td>
+<td>24 to 30 months</td>
+</tr>
+</table>
+
+<p><b>Cleansing the teeth.</b> As soon as the
+first tooth appears, it should be cleansed
+each day with a small piece of gauze or
+cotton saturated in a weak solution of
+bicarbonate of soda and water. A teaspoonful
+of water after each feeding or
+after taking fruit juice will help to cleanse
+the mouth.</p>
+
+<p><b>Drooling.</b> When the baby is about four
+months old the flow of saliva is increased.
+This is an indication that the salivary
+glands are developing, and not, as is commonly
+thought, a sign that the teeth are<span class="pagenum" id="Page_90">[90]</span>
+trying to push their way through the
+gums, although this may be the case.</p>
+
+<figure class="figcenter illowe44_6875" id="image090">
+  <img class="w100" src="images/image090.jpg" alt="A child brushing their own teeth">
+  <figcaption class="caption"><p>CHILD BRUSHING HIS TEETH</p></figcaption>
+</figure>
+
+<p><b>Teething.</b> Babies nourished by healthy
+breast milk cut their teeth earlier than
+those who are bottle fed. When the teeth
+begin to come the gums are apt to be<span class="pagenum" id="Page_91">[91]</span>
+red and swollen. Special care should be
+taken at this time to keep the mouth
+clean. It is a mistake to dread the teething
+period and to feel that the baby is
+sure to be sick. Sickness at this time
+usually attributed to teething is more apt
+to be due to faulty feeding or to some
+other condition, and the family physician
+should be consulted at once.</p>
+
+<p><b>Diet.</b> Good teeth in a baby depend
+largely on his diet. During the first few
+months of his life, in addition to milk he
+should be given fruit juice and meat juice
+(see <a href="#APPENDIX_B">Appendix B</a>). As his teeth develop he
+should be given food that requires chewing;
+this is necessary to keep the teeth
+and muscles of the jaw strong and healthy.</p>
+
+<p><b>Teeth and their care.</b> By the time the
+child is two and a half years old the temporary
+teeth should be fully developed.
+These are replaced by the permanent
+teeth, which usually begin to appear about<span class="pagenum" id="Page_92">[92]</span>
+the sixth year. Their condition will largely
+depend upon the care given to the first
+teeth; neglect of the temporary teeth is
+a frequent cause of decay in the permanent
+teeth.</p>
+
+<p>After the teeth come they should be
+cleansed with a soft brush in the morning
+and after the evening meal. A good
+mouth wash consists of a two per cent
+boric acid solution or a weak solution of
+bicarbonate of soda and water (one-half
+teaspoonful to a glass of water).</p>
+
+<p><b>Care of the toothbrush.</b> After being
+used the toothbrush should be cleansed
+with soap and warm water, thoroughly
+rinsed, and completely dried. Each day
+it is well to place the brush in the
+sunshine.</p>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_93">[93]</span></p>
+
+<h2 class="nobreak" id="CHAPTER_XI">CHAPTER XI<br>
+<br>
+<span class="bold fs80">EMERGENCIES</span></h2>
+</div>
+
+<div class="blockquot">
+
+<p><b>Suggestions for demonstrations.</b> <b>1.</b> Describe
+the bath thermometer and illustrate its use with
+water at different temperatures. <b>2.</b> Demonstrate
+the preparation of an enema and show the correct
+position of the body when taking one. <b>3.</b> Show
+how to protect the baby from infection when the
+mother has a cold.</p>
+</div>
+
+<p>Babies should be protected from excessive
+excitement. The brain grows as
+much during the first year as it does
+during the entire remainder of life. As
+the baby’s nervous system is easily upset,
+he should be kept free from disturbing
+influences.</p>
+
+<p><b>Convulsions.</b> Anything which upsets
+the baby’s nervous system may interfere
+with the process of digestion. This, as<span class="pagenum" id="Page_94">[94]</span>
+well as improper food, constipation, or
+some acute illness may be the cause
+of convulsions. When in a convulsion,
+the baby loses consciousness, the legs
+and arms stiffen, and the facial muscles
+begin to twitch. Send for a doctor at
+once. Meanwhile the baby should be
+placed in a tub of warm water. If a thermometer
+is not at hand, some adult
+should always test the temperature by
+placing her arm, up to the elbow, in the
+water. Great care should be taken that the
+water is not too hot, as many babies have
+been seriously burned in this way. The
+temperature of the water should be slowly
+raised to 108° F. by adding hot water.
+A cold compress should be placed on
+the child’s head and frequently changed.
+When the convulsion ceases the child
+should be removed from the bath and
+wrapped in a warm blanket, and his face
+should be bathed with cold water. If<span class="pagenum" id="Page_95">[95]</span>
+necessary, he may be kept in the bath
+about twenty minutes. If a child has
+convulsions and a tub is not
+available, he should be wrapped
+in a large bath towel which has
+been dipped in water at a temperature
+of 104° F., wrapped
+in a soft blanket, and the face
+and hands should be bathed in
+cold water.</p>
+
+<figure class="figright illowe6" id="image095">
+  <img class="w100" src="images/image095.jpg" alt="A bath thermometer for baths">
+  <figcaption class="caption"><p>BATH THERMOMETER</p></figcaption>
+</figure>
+
+<p><b>Colic.</b> Colic, or a pain in the
+bowels, is indicated by a sharp,
+spasmodic cry, a drawing up of
+the legs, and a contraction of
+the muscles of the face and
+abdomen. The sufferer should
+be given a little warm water to
+drink and should have a soft,
+hot flannel placed over the abdomen and
+around the feet, or he should be laid on
+his stomach across a hot-water bag which
+is protected by a cloth covering.</p>
+
+<p><span class="pagenum" id="Page_96">[96]</span></p>
+
+<p><b>Constipation.</b> It is important that the
+mother who is nursing a baby should have
+a free movement of the bowels each day;
+if her bowels are kept open and her digestion
+is good, the baby will not, as a rule,
+be constipated. A little water given to
+the baby between feedings will help to
+prevent constipation. Fruit juices, such as
+prune and orange juice, should also be
+given. The most effective way of overcoming
+or preventing constipation is to
+develop the habit of having the bowels
+move at the same time each day. The
+baby should not be allowed to go more
+than twenty-four hours without a movement.
+Except in emergency, however, do
+not give the baby an enema or suppository
+or any medicine unless ordered to do so
+by a physician.</p>
+
+<p><b>Enema.</b> An enema of two to four
+ounces of warm water, to which has been
+added a little soapsuds and one or two<span class="pagenum" id="Page_97">[97]</span>
+tablespoonfuls of warm olive oil, will usually
+cause a movement of the bowels.</p>
+
+<p><b>Directions for giving an enema.</b> Place
+the baby on his back with a folded towel
+under his buttocks. A soft rubber catheter
+is safer to use than the hard rubber nozzle
+provided for this purpose. Allow the water
+to run freely through the catheter before
+inserting, so as to prevent injecting cold
+water and air into the rectum. Lift the
+baby’s feet with the left hand and with the
+right insert the oiled catheter gently into
+the rectum for two or three inches.</p>
+
+<p><b>Diarrhea.</b> A well baby usually has one
+or two movements a day. Frequent movements,
+or diarrhea, may be the beginning
+of a severe illness, and a physician should
+be consulted at once. This condition occurs
+more frequently with bottle-fed babies. If
+it occurs in a breast-fed baby, it is usually
+because the mother has not been careful
+about her diet or because the baby has<span class="pagenum" id="Page_98">[98]</span>
+been given improper food. To relieve
+this condition, if a physician is not at
+hand, give one teaspoonful of castor oil
+and omit the feeding in order to let the
+baby’s stomach rest.</p>
+
+<p><b>Prevention of chafing.</b> The skin of the
+baby is sensitive and may be easily irritated.
+For this reason the baby’s diaper
+should be removed as soon as soiled and
+the skin cleansed with warm water. The
+folds of the skin should be thoroughly
+dried and dusted with a little talcum
+powder, or olive oil may be applied, before
+the clean diaper is put on.</p>
+
+<p><b>Colds.</b> Common colds are contagious
+and in infants often lead to serious illness.
+A mother with a cold, when nursing her
+baby, should tie a handkerchief loosely
+over her nose and mouth in order to protect
+the child from infection if she should
+cough or sneeze. Many children’s diseases,
+such as whooping cough, measles, etc.,<span class="pagenum" id="Page_99">[99]</span>
+are transmitted through the secretions of
+the nose and mouth. Any member of
+the family who has a cold should keep
+away from the children, and particularly
+from the baby.</p>
+
+<figure class="figcenter illowe40_1875" id="image099">
+  <img class="w100" src="images/image099.jpg" alt="A woman wearing a mask covering their
+mouth and nose while holding a baby">
+  <figcaption class="caption"><p>PROTECTING THE BABY FROM HIS MOTHER’S COLD</p></figcaption>
+</figure>
+
+<p><span class="pagenum" id="Page_100">[100]</span></p>
+
+<p><b>Vaccination.</b> Before the discovery of vaccine,
+smallpox was the most dreaded disease
+in the world and more prevalent than
+measles is to-day. A hundred years ago it
+was considered a disease of the children;
+to-day, by the simple and safe process of
+vaccination, it has been almost entirely
+eliminated, except in those localities where
+through prejudice or ignorance the children
+are not vaccinated. Therefore every
+baby should be vaccinated before he is six
+months old; this should be repeated at
+about six years of age, and later if there
+is a smallpox epidemic.</p>
+
+<p>The best place for vaccination is on the
+left arm. If the leg be selected, as it is
+occasionally (especially with girls), the child
+should stay in bed during the reaction
+following vaccination.</p>
+
+<p>The aftercare of a vaccinated child is
+important. A dressing of clean, sterile
+gauze should be placed over the point of<span class="pagenum" id="Page_101">[101]</span>
+vaccination and held in place with strips
+of adhesive plaster. The dressing should
+be changed only by the physician or under
+his orders. If it sticks to the scab, it
+should not be pulled off; the cloth should
+be cut away around it and a small piece
+left adhering to the arm and a fresh dressing
+placed over this. Do not apply vaseline
+or any kind of ointment to the point
+of inoculation. Nothing must touch it
+but clean boiled water and sterile dressing
+handled by clean hands.</p>
+
+<p>A vaccinated child should have a bath
+and a change of underwear daily, but it is
+important that the dressing over the vaccination
+should be kept clean and dry. The
+child should not be permitted to play in
+gardens, stables, or dusty streets until the
+arm has completely healed.<span class="pagenum" id="Page_102">[102]</span>
+</p>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_103">[103]</span></p>
+
+<h2 class="nobreak" id="APPENDIX_A">APPENDIX A</h2>
+</div>
+
+<p class="center bold">ORGANIZATION OF THE GIRLS’ HEALTH
+LEAGUE CLASSES</p>
+
+
+<h3>I. <span class="smcap">Preliminary Meeting</span></h3>
+
+<p>The mothers and teachers should be invited
+and urged to attend the meeting for the organization
+of a class. The success of this movement
+for the health of our girls and for the
+saving of our babies depends largely upon the
+interest and coöperation of the mothers and
+teachers.</p>
+
+<p>The organizer should preside, and the school
+physician should be asked to explain the object
+of the league.</p>
+
+<p>At this preliminary meeting membership cards
+should be distributed to those desiring to join
+the class. These are not to be signed until the
+girls have taken them home and secured the
+signatures of their parents or guardians. While
+everything possible should be done to make the
+club proposition attractive, no girl should be<span class="pagenum" id="Page_104">[104]</span>
+urged to join against her will. An unwilling
+member is not a good member.</p>
+
+<p>In order to secure careful personal supervision
+and free discussion, a class of not more than
+twelve is desirable, but as many as twenty-four
+may be directed by an experienced teacher.</p>
+
+<p>The form of membership card is given below:</p>
+
+<div class="bbox wd80" style="padding: 1em">
+<p class="center noindent fs150 gothic">Girls’ Health League</p>
+<p class="center noindent fs90">Under the Auspices of the</p>
+<p class="center noindent smcap">Public Health Department of the</p>
+<p class="center noindent fs110 lsp2">MASSACHUSETTS STATE FEDERATION OF
+WOMEN’S CLUBS</p>
+<br>
+<p class="noindent">
+I desire to become a member of the Girls’ Health League,
+_______________________________________________________
+and promise to do my part towards making others well
+and happy.</p>
+<br>
+<span class="smcap">Name</span> __________________________________________<br>
+<br>
+<span class="smcap" style="margin-left: 4em;">Address</span> _______________________________________<br>
+<br>
+<span style="margin-left: 8em;" class="smcap">Date</span> __________________________<br>
+<br>
+<span class="smcap">Approval of Parent or Guardian</span> ________________<br>
+<br>
+<b>Attendance at lectures <span class="lsp">1 2 3 4 5 6 7 8 9 10 11 12</span></b><br>
+(Check each lecture attended)<br>
+</div>
+
+<p><span class="pagenum" id="Page_105">[105]</span></p>
+
+
+<h3>II. <span class="smcap">First Meeting of the Class</span></h3>
+
+<ol>
+<li>The membership cards should be collected.</li>
+<li>The members elect a president, a vice
+president, and a secretary. The organizer and
+instructor are to be honorary president and
+vice president, respectively.</li>
+<li>Membership cards are to be given to the
+secretary for filing. At each succeeding meeting
+these are to be checked to show attendance.</li>
+<li>A card like that reproduced below should
+be filled out and forwarded to the headquarters
+of the Girls’ Health League.</li>
+</ol>
+
+<div class="bbox wd80" style="padding: 1em">
+<p class="center noindent fs150 gothic">Girls’ Health League</p>
+<p class="center noindent fs90">Under the Auspices of the</p>
+<p class="center noindent fs110 lsp2">MASSACHUSETTS STATE FEDERATION OF
+WOMEN’S CLUBS</p>
+<br>
+<table>
+<tr>
+<td>State ___________________</td>
+<td>Class Number ________</td>
+</tr>
+<tr>
+<td>Town __________________</td>
+<td></td>
+</tr>
+<tr>
+<td>Class Rank  ______________</td>
+<td></td>
+</tr>
+<tr>
+<td>Number of Members ______</td>
+<td></td>
+</tr>
+<tr>
+<td>Organizer ______________</td>
+<td>Instructor ___________</td>
+</tr>
+<tr>
+<td><span style="margin-left: 1em;">Address ______________</span></td>
+<td><span style="margin-left: 1em;">Address __________</span></td>
+</tr>
+<tr>
+<td colspan="2">Date of Organization __________________________</td>
+</tr>
+</table>
+</div>
+
+<p><span class="pagenum" id="Page_106">[106]</span></p>
+
+
+<h3>III. <span class="smcap">Order of Business for the Meeting</span></h3>
+
+<ol>
+<li>Calling meeting to order by the president.</li>
+<li>Calling the roll by the secretary.</li>
+<li>Reporting the illness of any member.</li>
+<li>A short quiz on the last lesson.</li>
+<li>A twenty minutes’ talk by the instructor,
+followed by a half hour devoted to practical
+demonstrations on the subject of the lesson.</li>
+</ol>
+
+<p>The following articles are suggested for use
+in the demonstrations:</p>
+
+<p class="noindent pad4">
+Large-sized washable doll<br>
+A complete set of baby clothing<br>
+A bathtub<br>
+Scales<br>
+A pad for the scales<br>
+Clothes basket for baby’s bed<br>
+Mattress<br>
+Sheets<br>
+Stork sheeting<br>
+Mattress protector<br>
+Blankets<br>
+Spread<br>
+Two bath towels<br>
+Two face towels<br>
+Two wash cloths<br>
+Toilet articles<br>
+Utensils for preparing the baby’s food<br>
+</p>
+
+<p><span class="pagenum" id="Page_107">[107]</span></p>
+
+<p>The object of the demonstrations is to make
+the work of the league of practical value to the
+girls.</p>
+
+<p>After attending three successive meetings of
+the class each member will be given a Girls’
+Health League button, which is reproduced in
+the accompanying cut. The presentation of buttons
+signifies that the girls are members of the
+Girls’ Health League. On receipt of the button
+each girl agrees to do some definite act each day
+to make others well and happy.</p>
+
+<figure class="figcenter illowe20" id="image107">
+  <img class="w100" src="images/image107.jpg" alt="A button of a child holding a flag">
+  <figcaption class="caption"><p>CHILDREN WELL <span class="allsmcap">AND</span> HAPPY</p>
+
+<p>GIRLS’ HEALTH LEAGUE</p></figcaption>
+</figure>
+
+<p><span class="pagenum" id="Page_108">[108]</span></p>
+
+
+<h3>IV. <span class="smcap">Finishing the Course</span></h3>
+
+<p>At the completion of the course each girl will
+be given an oral examination and will be asked
+to write an essay on the care of a baby. The
+following subjects are suggested:</p>
+
+<ol class="pad4">
+<li>What do you mean by personal hygiene?</li>
+<li>What do you mean by home sanitation?</li>
+<li>Give three reasons why a mother should nurse
+her baby.</li>
+<li>If a baby must be bottle fed, what is the best
+substitute for breast milk, and who should direct how
+the food be prepared?</li>
+<li>If a baby is bottle fed, how would you care for
+its milk?</li>
+<li>What can you do to help save the babies?</li>
+</ol>
+
+<div class="bbox wd80" style="padding: 1em">
+<img style="float: left; height: 4em;margin: 1em;" src="images/image108.jpg" alt="Massachusets State Federation of
+Women's club shield">
+<p class="noindent center gothic fs110">Certificate of Graduation</p>
+<p class="noindent center gothic fs150">Girls’ Health League</p>
+<p class="center noindent fs90">Under the Auspices of the</p>
+<p class="center noindent fs110 gothic">Massachusetts State Federation of Women’s Clubs</p>
+<br>
+<p class="noindent center fs110">This Certifies that</p><br>
+<p class="noindent center">_________________________________________________________</p>
+<p class="noindent center">has satisfactorily completed the course of study prescribed by the
+Girls’ Health League in _____________________________</p>
+<br>
+<table class="autotable" style="width: 100%">
+<tr>
+<td>
+<img src="images/image108-1.jpg" alt="Signature of Claire H. Gurney."><br>
+<i>President of Massachusetts State<br>
+Federation of Women’s Clubs</i><br>
+</td>
+<td class="tdr">
+<img src="images/image108-2.jpg" alt="Signature of May Bliss Dickinson, R.N."><br>
+<i>Founder of Girls’ Health League</i><br>
+</td>
+</tr>
+<tr>
+<td>
+<img src="images/image108-3.jpg" alt="Signature of The Chairman."><br>
+<i>Chairman Public Health Department</i><br>
+</td>
+<td class="tdr"><i>Date</i> ________________________<br></td>
+</tr>
+</table>
+</div>
+
+<p><span class="pagenum" id="Page_109">[109]</span></p>
+
+<p>The class average, together with one of the
+essays, should be sent to the headquarters of
+the league.</p>
+
+<p>On receipt of the essays and the class records
+certificates will be presented to the graduates by
+the Public Health Department of the Massachusetts
+State Federation of Women’s Clubs. The
+form of certificate is given above.</p>
+
+<p><span class="pagenum" id="Page_110">[110]</span></p>
+
+
+<h2 id="APPENDIX_B">APPENDIX B</h2>
+
+
+<p class="center bold">RECIPES</p>
+
+<p><b>Limewater.</b> To make limewater, add one teaspoonful
+of unslaked lime to one quart of cool,
+boiled water. Pour into a bottle and shake thoroughly.
+Let it stand twenty-four hours; pour off
+the clear fluid at the top and strain. Keep in a
+cool place.</p>
+
+<p><b>Barley water.</b> Mix two teaspoonfuls of barley
+flour with a little cold water, then add one quart
+of water and boil twenty minutes in a double
+boiler. Strain through a very fine sieve and add
+enough boiled water to make one quart.</p>
+
+<p><b>Rice water.</b> Rice water is made in the same
+way as barley water, but only one teaspoonful of rice
+is used to one quart of water.</p>
+
+<p><b>Oatmeal water.</b> Mix two even tablespoonfuls
+of oatmeal with a little cold water; add one quart
+of water and boil for at least one hour in a
+double boiler. Strain through a fine sieve and
+add enough boiled water to make one quart.</p>
+
+<p><span class="pagenum" id="Page_111">[111]</span></p>
+
+<p><b>Beef juice.</b> Select the third cut of the round
+lean beef, broil it slightly on both sides, cut in
+small pieces, and squeeze the juice from it with
+a potato ricer or a meat press. Add a pinch of
+salt, and before using warm it slightly by standing
+the cup containing the juice in a dish of
+hot water.</p>
+
+<p><b>Whey.</b> Warm one pint of fresh milk to about
+110° F. Add one teaspoonful of essence of pepsin
+or a junket tablet and stir until it is well
+mixed. Pour into cups and let stand until it
+jellies. Then break up the curds with a fork
+and strain through a sieve. The liquid is called
+whey, and it is sometimes used when babies
+cannot digest cow’s milk.</p>
+
+<p><b>Two per cent boric acid solution.</b> Put one
+teaspoonful of boric acid powder in a pint of
+boiling water and keep in a clean bottle.</p>
+
+<p><b>Soap suppository.</b> Take a piece of Ivory or
+castile soap and cut out a piece two inches long
+and about the size of a lead pencil. Narrow to
+a dull point at one end.<span class="pagenum" id="Page_112">[112]</span>
+</p>
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum" id="Page_113">[113]</span></p>
+
+<h2 class="nobreak" id="INDEX">INDEX</h2>
+</div>
+
+
+<ul class="index">
+<li class="ifrst">Adenoids, <a href="#Page_80">80</a></li>
+
+<li class="indx">Air, necessity for, <a href="#Page_17">17</a>;</li>
+<li class="isub1">impure, <a href="#Page_19">19</a>;</li>
+<li class="isub1">temperature of, <a href="#Page_21">21</a></li>
+
+
+<li class="ifrst">Baby, care of the newborn, <a href="#Page_29">29-37</a>;</li>
+<li class="isub1">breast feeding, <a href="#Page_38">38-45</a>;</li>
+<li class="isub1">bottle feeding, <a href="#Page_46">46-54</a>;</li>
+<li class="isub1">caring for food of, <a href="#Page_55">55-62</a>;</li>
+<li class="isub1">the bath, <a href="#Page_63">63-70</a>;</li>
+<li class="isub1">clothing, <a href="#Page_71">71-77</a>;</li>
+<li class="isub1">training, <a href="#Page_78">78-87</a>;</li>
+<li class="isub1">teeth and their care, <a href="#Page_88">88-92</a>;</li>
+<li class="isub1">sicknesses, <a href="#Page_93">93-101</a></li>
+
+<li class="indx">Bacteria, preventing development of, <a href="#Page_27">27</a></li>
+
+<li class="indx">Barley water, <a href="#Page_51">51</a>, <a href="#Page_110">110</a></li>
+
+<li class="indx">Bath thermometer, use of, <a href="#Page_94">94</a></li>
+
+<li class="indx">Baths, for girls, <a href="#Page_8">8</a>;</li>
+<li class="isub1">oil, <a href="#Page_30">30</a>;</li>
+<li class="isub1">sponge, <a href="#Page_30">30</a>;</li>
+<li class="isub1">tub, <a href="#Page_63">63-70</a>;</li>
+<li class="isub1">bran, <a href="#Page_69">69</a>;</li>
+<li class="isub1">for convulsions, <a href="#Page_94">94</a></li>
+
+<li class="indx">Beds, <a href="#Page_34">34</a></li>
+
+<li class="indx">Beef juice, <a href="#Page_111">111</a></li>
+
+<li class="indx">Bicarbonate of soda solution, <a href="#Page_10">10</a></li>
+
+<li class="indx">Birth, registration of, <a href="#Page_35">35</a></li>
+
+<li class="indx">Boric acid solution, <a href="#Page_67">67</a></li>
+
+<li class="indx">Bottle feeding, <a href="#Page_46">46-54</a>;</li>
+<li class="isub1">special foods, <a href="#Page_46">46</a>;</li>
+<li class="isub1">cow’s milk, <a href="#Page_54">54</a>;</li>
+<li class="isub1">modified milk, <a href="#Page_48">48</a>;</li>
+<li class="isub1">utensils necessary in, <a href="#Page_51">51</a>;</li>
+<li class="isub1">pasteurizing, <a href="#Page_52">52</a></li>
+
+<li class="indx">Bottles, care of, <a href="#Page_57">57</a></li>
+
+<li class="indx">Bowels, care of, <a href="#Page_14">14</a>, <a href="#Page_81">81</a></li>
+
+<li class="indx">Breast feeding, reasons for, <a href="#Page_38">38</a>;</li>
+<li class="isub1">hours for, <a href="#Page_39">39</a>;</li>
+<li class="isub1">position of baby for, <a href="#Page_40">40</a>;</li>
+<li class="isub1">mixed feedings, <a href="#Page_41">41</a>;</li>
+<li class="isub1">diet for mother, <a href="#Page_42">42</a>;</li>
+<li class="isub1">weaning, <a href="#Page_42">42</a></li>
+
+
+<li class="ifrst">Candy as food, <a href="#Page_14">14</a></li>
+
+<li class="indx">Carbohydrates, <a href="#Page_11">11</a></li>
+
+<li class="indx">Carrying schoolbooks, <a href="#Page_5">5</a></li>
+
+<li class="indx">Cellars, care of, <a href="#Page_26">26</a></li>
+
+<li class="indx">Certified milk, <a href="#Page_47">47</a></li>
+
+<li class="indx">Chafing, avoidance of, <a href="#Page_98">98</a></li>
+
+<li class="indx">Chamber, use of, <a href="#Page_82">82</a></li>
+
+<li class="indx">Clothing, <a href="#Page_71">71-77</a>;</li>
+<li class="isub1">bands, <a href="#Page_71">71-73</a>;</li>
+<li class="isub1">shirts, <a href="#Page_73">73</a>;</li>
+<li class="isub1">gertrudes, <a href="#Page_74">74</a>;</li>
+<li class="isub1">dresses, <a href="#Page_74">74</a>;</li>
+<li class="isub1">nightgowns, <a href="#Page_74">74</a>;</li>
+<li class="isub1">stockings, <a href="#Page_76">76</a>;</li>
+<li class="isub1">short clothes, <a href="#Page_76">76</a>;</li>
+<li class="isub1">for summer, <a href="#Page_76">76</a>;</li>
+<li class="isub1">for winter, <a href="#Page_77">77</a></li>
+
+<li class="indx">Colds, <a href="#Page_98">98</a></li>
+
+<li class="indx">Colic, crying due to, <a href="#Page_84">84</a>;</li>
+<li class="isub1">treatment of, <a href="#Page_95">95</a></li>
+
+<li class="indx">Condensed milk as food, <a href="#Page_46">46</a></li>
+
+<li class="indx">Constipation, <a href="#Page_96">96</a></li>
+
+<li class="indx">Contagion, avoiding, <a href="#Page_99">99</a></li>
+
+<li class="indx">Convulsions, <a href="#Page_93">93</a></li>
+
+<li class="indx">Correct posture, <a href="#Page_3">3-6</a>;</li>
+<li class="isub1">when feeding baby, <a href="#Page_60">60</a>;</li>
+<li class="isub1">during the bath, <a href="#Page_68">68</a></li>
+
+<li class="indx">Crying, normal, <a href="#Page_84">84</a>;</li>
+<li class="isub1">due to hunger, <a href="#Page_84">84</a>;</li>
+<li class="isub1">due to temper, <a href="#Page_85">85</a>;</li>
+<li class="isub1">due to illness, <a href="#Page_84">84-85</a>;</li>
+<li class="isub1"><span class="pagenum" id="Page_114">[114]</span>due to fright, <a href="#Page_85">85</a></li>
+
+
+<li class="ifrst">Dental floss, use of, <a href="#Page_9">9</a></li>
+
+<li class="indx">Diapers, <a href="#Page_74">74</a></li>
+
+<li class="indx">Diarrhea, <a href="#Page_97">97</a></li>
+
+<li class="indx">Diet, for nursing mothers, <a href="#Page_42">42</a>;</li>
+<li class="isub1">for babies, <a href="#Page_91">91</a>;</li>
+<li class="isub1">for children, <a href="#Page_91">91</a></li>
+
+<li class="indx">Discharges from sick persons, <a href="#Page_24">24</a></li>
+
+<li class="indx">Dishcloths and towels, <a href="#Page_28">28</a></li>
+
+<li class="indx">Drafts, <a href="#Page_21">21</a></li>
+
+<li class="indx">Dresses, selection of, <a href="#Page_74">74</a></li>
+
+<li class="indx">Dressing the baby, <a href="#Page_69">69</a></li>
+
+<li class="indx">Drooling, <a href="#Page_89">89</a></li>
+
+<li class="indx">Dust and dusting, <a href="#Page_25">25</a></li>
+
+
+<li class="ifrst">Ears, care of, <a href="#Page_66">66</a></li>
+
+<li class="indx">Emergencies, <a href="#Page_93">93-101</a>;</li>
+<li class="isub1">convulsions, <a href="#Page_93">93</a>;</li>
+<li class="isub1">colic, <a href="#Page_95">95</a>;</li>
+<li class="isub1">constipation, <a href="#Page_96">96</a>;</li>
+<li class="isub1">diarrhea, <a href="#Page_97">97</a>;</li>
+<li class="isub1">colds, <a href="#Page_98">98</a>;</li>
+<li class="isub1">vaccination, <a href="#Page_100">100</a></li>
+
+<li class="indx">Enemas, <a href="#Page_96">96-97</a></li>
+
+<li class="indx">Exercise, <a href="#Page_15">15</a>, <a href="#Page_86">86</a></li>
+
+<li class="indx">Eyes, care of, <a href="#Page_66">66</a></li>
+
+
+<li class="ifrst">Fats as food, <a href="#Page_11">11</a></li>
+
+<li class="indx">Filters, <a href="#Page_24">24</a></li>
+
+<li class="indx">Flies, protection from, <a href="#Page_36">36</a></li>
+
+<li class="indx">Food, three classes of, <a href="#Page_10">10</a>;</li>
+<li class="isub1">mixed diet, <a href="#Page_11">11</a>;</li>
+<li class="isub1">milk, <a href="#Page_13">13</a>;</li>
+<li class="isub1">candy, <a href="#Page_14">14</a>;</li>
+<li class="isub1">care of, <a href="#Page_27">27</a>, <a href="#Page_55">55-62</a>;</li>
+<li class="isub1">for nursing mothers, <a href="#Page_41">41</a></li>
+
+<li class="indx">Fright, crying from, <a href="#Page_85">85</a></li>
+
+
+<li class="ifrst">Garbage, care of, <a href="#Page_27">27</a></li>
+
+<li class="indx">Gertrudes (petticoats), <a href="#Page_74">74</a></li>
+
+<li class="indx">Girls’ Health League classes, <a href="#Page_103">103-109</a></li>
+
+
+<li class="ifrst">Hands, care of, <a href="#Page_28">28</a></li>
+
+<li class="indx">Health of nursing mothers, <a href="#Page_41">41</a></li>
+
+<li class="indx">Hearing of babies, <a href="#Page_33">33</a></li>
+
+<li class="indx">Hunger, crying from, <a href="#Page_84">84</a></li>
+
+
+<li class="ifrst">Illness, crying due to, <a href="#Page_85">85</a></li>
+
+<li class="indx">Indigestion, <a href="#Page_84">84</a></li>
+
+
+<li class="ifrst">Kissing, <a href="#Page_83">83</a></li>
+
+
+<li class="ifrst">Laxatives, use of, <a href="#Page_96">96</a></li>
+
+<li class="indx">Limewater, <a href="#Page_50">50</a>, <a href="#Page_110">110</a></li>
+
+
+<li class="ifrst">Maltose, in modifying milk, <a href="#Page_51">51</a></li>
+
+<li class="indx">Mattresses, choice and care of, <a href="#Page_34">34</a></li>
+
+<li class="indx">Milk as food, <a href="#Page_13">13</a></li>
+
+<li class="indx">Milk sugar, <a href="#Page_51">51</a></li>
+
+<li class="indx">Modified milk, <a href="#Page_48">48</a></li>
+
+<li class="indx">Mosquitoes, protection from, <a href="#Page_36">36</a></li>
+
+<li class="indx">Mouth, care of, <a href="#Page_10">10</a>, <a href="#Page_66">66</a></li>
+
+
+<li class="ifrst">Nails, care of, <a href="#Page_68">68</a></li>
+
+<li class="indx">Nightgowns, <a href="#Page_74">74</a></li>
+
+<li class="indx">Nipples, care of, <a href="#Page_58">58</a></li>
+
+<li class="indx">Nose, care of, <a href="#Page_66">66</a>, <a href="#Page_80">80</a></li>
+
+<li class="indx">Nursing. <i>See</i> Bottle feeding <i>and</i> Breast feeding</li>
+
+
+<li class="ifrst"><span class="pagenum" id="Page_115">[115]</span>Oatmeal water, <a href="#Page_110">110</a></li>
+
+<li class="indx">Oil, use of, <a href="#Page_30">30</a></li>
+
+<li class="indx">Oil-producing glands, <a href="#Page_30">30</a></li>
+
+<li class="indx">Orange juice for babies, <a href="#Page_91">91</a></li>
+
+
+<li class="ifrst">Pacifiers, <a href="#Page_83">83</a></li>
+
+<li class="indx">Pasteurizing milk, <a href="#Page_52">52</a></li>
+
+<li class="indx">Personal hygiene, <a href="#Page_1">1-15</a>;</li>
+<li class="isub1">value of good health, <a href="#Page_1">1</a>;</li>
+<li class="isub1">correct posture, <a href="#Page_3">3</a>;</li>
+<li class="isub1">care of skin, <a href="#Page_6">6</a>;</li>
+<li class="isub1">baths, <a href="#Page_8">8</a>;</li>
+<li class="isub1">food, <a href="#Page_10">10</a>;</li>
+<li class="isub1">exercise, <a href="#Page_15">15</a></li>
+
+<li class="indx">Perspiration, avoiding undue, <a href="#Page_21">21</a></li>
+
+<li class="indx">Pillows, <a href="#Page_35">35</a></li>
+
+<li class="indx">Plants in houses, <a href="#Page_19">19</a></li>
+
+<li class="indx">Privy vaults, <a href="#Page_23">23</a></li>
+
+<li class="indx">Proprietary baby foods, <a href="#Page_51">51</a></li>
+
+<li class="indx">Protein, <a href="#Page_11">11</a></li>
+
+
+<li class="ifrst">Reading position, <a href="#Page_6">6</a></li>
+
+<li class="indx">Recipes, <a href="#Page_110">110</a></li>
+
+<li class="indx">Refrigerators, homemade, <a href="#Page_55">55</a></li>
+
+<li class="indx">Rice water, <a href="#Page_110">110</a></li>
+
+<li class="indx">Rickets, avoiding, <a href="#Page_94">94</a></li>
+
+
+<li class="ifrst">Sanitation, home, <a href="#Page_16">16-28</a></li>
+
+<li class="indx">Scales, use of, <a href="#Page_44">44</a></li>
+
+<li class="indx">Scalp, care of, <a href="#Page_67">67</a></li>
+
+<li class="indx">Screens, <a href="#Page_25">25</a></li>
+
+<li class="indx">Scurvy, prevention of, <a href="#Page_67">67</a></li>
+
+<li class="indx">Shirts, selection of, <a href="#Page_73">73</a></li>
+
+<li class="indx">Shoes, selection of, <a href="#Page_4">4</a></li>
+
+<li class="indx">Sitting position, <a href="#Page_4">4</a></li>
+
+<li class="indx">Skin, care of, <a href="#Page_6">6</a></li>
+
+<li class="indx">Sleep, <a href="#Page_79">79</a></li>
+
+<li class="indx">Speech of babies, <a href="#Page_33">33</a></li>
+
+<li class="indx">Spitting, <a href="#Page_8">8</a></li>
+
+<li class="indx">Standing position, <a href="#Page_3">3</a></li>
+
+<li class="indx">Starch as food, <a href="#Page_11">11</a></li>
+
+<li class="indx">Stockings, selection of, <a href="#Page_76">76</a></li>
+
+<li class="indx">Sugar, as food, <a href="#Page_11">11</a>;</li>
+<li class="isub1">in modifying milk, <a href="#Page_49">49</a></li>
+
+<li class="indx">Sunshine, value of, <a href="#Page_17">17</a></li>
+
+<li class="indx">Suppositories, <a href="#Page_96">96</a>, <a href="#Page_111">111</a></li>
+
+
+<li class="ifrst">Talcum powder, use of, <a href="#Page_98">98</a></li>
+
+<li class="indx">Teeth, care of, <a href="#Page_9">9</a>, <a href="#Page_88">88-92</a></li>
+
+<li class="indx">Teething, <a href="#Page_89">89</a></li>
+
+<li class="indx">Temper, crying from, <a href="#Page_85">85</a></li>
+
+<li class="indx">Temperature, in pasteurizing milk, <a href="#Page_52">52</a>;</li>
+<li class="isub1">for bath, <a href="#Page_63">63</a>;</li>
+<li class="isub1">of sleeping room, <a href="#Page_79">79</a>;</li>
+<li class="isub1">of bath for convulsions, <a href="#Page_93">93</a></li>
+
+<li class="indx">Thermometer, use of, <a href="#Page_95">95</a></li>
+
+<li class="indx">Thumb sucking, <a href="#Page_83">83</a></li>
+
+<li class="indx">Toothbrush, care of, <a href="#Page_92">92</a></li>
+
+
+<li class="ifrst">Vaccination, <a href="#Page_100">100</a></li>
+
+<li class="indx">Vegetables as food, <a href="#Page_11">11</a></li>
+
+<li class="indx">Ventilation, <a href="#Page_19">19</a></li>
+
+
+<li class="ifrst">Water, the body’s need of, <a href="#Page_13">13</a>;</li>
+<li class="isub1">purity of, <a href="#Page_22">22-24</a>;</li>
+<li class="isub1">use of, in modifying milk, <a href="#Page_48">48</a>;</li>
+<li class="isub1">sterile, <a href="#Page_62">62</a></li>
+
+<li class="indx">Weaning the baby, <a href="#Page_42">42</a></li>
+
+<li class="indx">Weight of baby, <a href="#Page_43">43</a></li>
+
+<li class="indx">Whey, <a href="#Page_111">111</a></li>
+</ul>
+<hr class="chap x-ebookmaker-drop">
+
+
+<div class="p2 chapter">
+<div class="transnote" id="transnote">
+TRANSCRIBER’S NOTE<br>
+<br>
+Obvious typographical errors and punctuation errors have been<br>
+corrected after careful comparison with other occurrences within<br>
+the text and consultation of external sources.<br>
+<br>
+Some hyphens in words have been silently removed, some added,<br>
+when a predominant preference was found in the original book.<br>
+<br>
+All misspellings in the text and inconsistent or archaic usage,<br>
+have been retained.<br>
+</div>
+</div>
+
+</body>
+</html>
+
